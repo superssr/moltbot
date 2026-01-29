@@ -1,0 +1,212 @@
+{
+  "app": {
+    "title": "Clawdbot 컨트롤",
+    "loading": "로딩 중…",
+    "error": "오류",
+    "version": "버전"
+  },
+  "nav": {
+    "groups": {
+      "chat": "채팅",
+      "control": "제어",
+      "agent": "에이전트",
+      "settings": "설정"
+    },
+    "tabs": {
+      "overview": "개요",
+      "channels": "채널",
+      "instances": "인스턴스",
+      "sessions": "세션",
+      "cron": "Cron 작업",
+      "skills": "스킬",
+      "nodes": "노드",
+      "chat": "채팅",
+      "config": "구성",
+      "debug": "디버그",
+      "logs": "로그"
+    },
+    "subtitles": {
+      "overview": "게이트웨이 상태, 진입점 및 빠른 상태 확인",
+      "channels": "채널 및 설정 관리",
+      "instances": "연결된 클라이언트 및 노드의 프레즌스 비콘",
+      "sessions": "활성 세션 검사 및 세션별 기본값 조정",
+      "cron": "웨이크업 및 반복 에이전트 실행 예약",
+      "skills": "스킬 가용성 및 API 키 주입 관리",
+      "nodes": "페어링된 장치, 기능 및 명령 노출",
+      "chat": "빠른 개입을 위한 직접 게이트웨이 채팅 세션",
+      "config": "~/.clawdbot/clawdbot.json 안전하게 편집",
+      "debug": "게이트웨이 스냅샷, 이벤트 및 수동 RPC 호출",
+      "logs": "게이트웨이 파일 로그 실시간 조회"
+    }
+  },
+  "sidebar": {
+    "collapse": "사이드바 접기",
+    "expand": "사이드바 펼치기",
+    "close": "사이드바 닫기",
+    "exitFocus": "포커스 모드 종료"
+  },
+  "chat": {
+    "placeholder": "메시지 (↩로 전송, Shift+↩로 줄바꿈)",
+    "connect": "채팅을 시작하려면 게이트웨이에 연결하세요…",
+    "agentMessage": "에이전트 메시지",
+    "agentMessageRequired": "에이전트 메시지가 필요합니다.",
+    "assistant": "어시스턴트",
+    "agent": "에이전트",
+    "copyMarkdown": "마크다운으로 복사",
+    "copied": "복사됨",
+    "copyFailed": "복사 실패",
+    "attach": "첨부",
+    "send": "보내기"
+  },
+  "status": {
+    "health": "상태",
+    "ok": "확인",
+    "offline": "오프라인",
+    "connected": "연결됨",
+    "disconnected": "연결 끊김",
+    "disconnectedGateway": "게이트웨이 연결이 끊어졌습니다.",
+    "active": "활성",
+    "enabled": "활성화됨",
+    "disabled": "비활성화됨",
+    "installed": "설치됨",
+    "loading": "로딩 중…",
+    "applying": "적용 중…",
+    "installing": "설치 중…",
+    "importing": "가져오는 중..."
+  },
+  "actions": {
+    "apply": "적용",
+    "save": "저장",
+    "cancel": "취소",
+    "edit": "편집",
+    "delete": "삭제",
+    "add": "추가",
+    "addJob": "작업 추가",
+    "enable": "활성화",
+    "disable": "비활성화",
+    "copy": "복사",
+    "retry": "재시도",
+    "refresh": "새로고침",
+    "loadConfig": "구성 불러오기",
+    "loadApprovals": "승인 불러오기",
+    "importRelays": "릴레이에서 가져오기",
+    "editProfile": "프로필 편집"
+  },
+  "config": {
+    "categories": {
+      "gateway": "게이트웨이",
+      "agents": "에이전트",
+      "authentication": "인증",
+      "models": "모델",
+      "tools": "도구",
+      "channels": "채널",
+      "messages": "메시지",
+      "commands": "명령",
+      "browser": "브라우저",
+      "audio": "오디오",
+      "broadcast": "브로드캐스트",
+      "hooks": "훅",
+      "logging": "로깅",
+      "skills": "스킬",
+      "plugins": "플러그인",
+      "discovery": "디스커버리",
+      "bindings": "바인딩",
+      "environment": "환경",
+      "canvasHost": "캔버스 호스트",
+      "cron": "Cron"
+    },
+    "descriptions": {
+      "gateway": "게이트웨이 서버 설정 (포트, 인증, 바인딩)",
+      "agents": "에이전트 구성, 모델 및 ID",
+      "authentication": "API 키 및 인증 프로필",
+      "models": "AI 모델 구성 및 제공업체",
+      "audio": "오디오 입출력 설정",
+      "browser": "브라우저 자동화 설정",
+      "broadcast": "브로드캐스트 및 알림 설정",
+      "update": "자동 업데이트 설정 및 릴리스 채널",
+      "messages": "메시지 처리 및 라우팅 설정",
+      "logging": "로그 레벨 및 출력 구성",
+      "canvasHost": "캔버스 렌더링 및 디스플레이",
+      "environment": "게이트웨이 프로세스에 전달되는 환경 변수"
+    },
+    "noSettings": "이 섹션에 설정이 없습니다",
+    "hideAdvanced": "고급 숨기기",
+    "showAdvanced": "고급 표시",
+    "hashMissing": "구성 해시가 없습니다. 다시 로드하고 재시도하세요.",
+    "approvalHashMissing": "실행 승인 해시가 없습니다. 다시 로드하고 재시도하세요."
+  },
+  "channels": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "signal": "Signal",
+    "imessage": "iMessage",
+    "bluebubbles": "BlueBubbles",
+    "msteams": "MS Teams",
+    "mattermost": "Mattermost"
+  },
+  "security": {
+    "host": "호스트",
+    "full": "전체",
+    "allowlist": "허용 목록",
+    "deny": "거부",
+    "ask": "확인",
+    "always": "항상",
+    "defaultSecurityMode": "기본 보안 모드.",
+    "defaultPromptPolicy": "기본 프롬프트 정책.",
+    "allowSkillExecutables": "게이트웨이가 나열한 스킬 실행 파일 허용."
+  },
+  "cron": {
+    "cronRequired": "Cron 표현식이 필요합니다.",
+    "invalidInterval": "잘못된 간격입니다.",
+    "invalidRunTime": "잘못된 실행 시간입니다."
+  },
+  "profile": {
+    "displayName": "표시 이름",
+    "avatarUrl": "아바타 URL",
+    "bannerUrl": "배너 URL",
+    "bio": "소개",
+    "bioPlaceholder": "간단한 소개 또는 설명",
+    "avatarPlaceholder": "프로필 사진 HTTPS URL",
+    "bannerPlaceholder": "배너 이미지 HTTPS URL",
+    "lightningAddress": "라이트닝 주소",
+    "lightningPlaceholder": "팁용 라이트닝 주소 (LUD-16)",
+    "picture": "프로필 사진",
+    "picturePreview": "프로필 사진 미리보기",
+    "importedRelays": "릴레이에서 프로필을 가져왔습니다. 검토 후 게시하세요.",
+    "imported": "프로필을 가져왔습니다. 검토 후 게시하세요.",
+    "publishFailed": "모든 릴레이에서 프로필 게시에 실패했습니다."
+  },
+  "theme": {
+    "dark": "다크",
+    "light": "라이트",
+    "darkTheme": "다크 테마",
+    "lightTheme": "라이트 테마"
+  },
+  "common": {
+    "key": "키",
+    "value": "JSON 값",
+    "enter": "Enter",
+    "apiKeySaved": "API 키가 저장되었습니다",
+    "loggedOut": "로그아웃되었습니다.",
+    "disabledOnboarding": "온보딩 중 비활성화됨",
+    "newDeviceToken": "새 장치 토큰 (복사하여 안전하게 보관하세요):",
+    "environmentVariables": "환경 변수",
+    "docsNewTab": "문서 (새 탭에서 열기)",
+    "authDocsNewTab": "Control UI 인증 문서 (새 탭에서 열기)",
+    "insecureDocsNewTab": "비보안 HTTP 문서 (새 탭에서 열기)"
+  },
+  "language": {
+    "select": "언어",
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ru": "Русский"
+  }
+}

@@ -7,12 +7,19 @@
 
 import en from "./locales/en.json" with { type: "json" };
 import zh from "./locales/zh.json" with { type: "json" };
+import ja from "./locales/ja.json" with { type: "json" };
+import ko from "./locales/ko.json" with { type: "json" };
+import es from "./locales/es.json" with { type: "json" };
+import fr from "./locales/fr.json" with { type: "json" };
+import de from "./locales/de.json" with { type: "json" };
+import pt from "./locales/pt.json" with { type: "json" };
+import ru from "./locales/ru.json" with { type: "json" };
 
-export type Locale = "en" | "zh";
+export type Locale = "en" | "zh" | "ja" | "ko" | "es" | "fr" | "de" | "pt" | "ru";
 
 export type TranslationDict = Record<string, string | TranslationDict>;
 
-const locales: Record<Locale, TranslationDict> = { en, zh };
+const locales: Record<Locale, TranslationDict> = { en, zh, ja, ko, es, fr, de, pt, ru };
 
 // Current locale state
 let currentLocale: Locale = "en";
@@ -53,11 +60,20 @@ export function initLocale(): void {
 
   // Auto-detect from browser
   const browserLang = navigator.language.toLowerCase();
-  if (browserLang.startsWith("zh")) {
-    currentLocale = "zh";
-  } else {
-    currentLocale = "en";
-  }
+  const langCode = browserLang.split("-")[0];
+  
+  const langMap: Record<string, Locale> = {
+    zh: "zh",
+    ja: "ja",
+    ko: "ko",
+    es: "es",
+    fr: "fr",
+    de: "de",
+    pt: "pt",
+    ru: "ru",
+  };
+  
+  currentLocale = langMap[langCode] ?? "en";
 }
 
 /**
@@ -127,6 +143,13 @@ export function getAvailableLocales(): Array<{ code: Locale; name: string }> {
   return [
     { code: "en", name: "English" },
     { code: "zh", name: "中文" },
+    { code: "ja", name: "日本語" },
+    { code: "ko", name: "한국어" },
+    { code: "es", name: "Español" },
+    { code: "fr", name: "Français" },
+    { code: "de", name: "Deutsch" },
+    { code: "pt", name: "Português" },
+    { code: "ru", name: "Русский" },
   ];
 }
 

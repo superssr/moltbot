@@ -1,0 +1,212 @@
+{
+  "app": {
+    "title": "Управление Clawdbot",
+    "loading": "Загрузка…",
+    "error": "Ошибка",
+    "version": "Версия"
+  },
+  "nav": {
+    "groups": {
+      "chat": "Чат",
+      "control": "Управление",
+      "agent": "Агент",
+      "settings": "Настройки"
+    },
+    "tabs": {
+      "overview": "Обзор",
+      "channels": "Каналы",
+      "instances": "Экземпляры",
+      "sessions": "Сессии",
+      "cron": "Cron-задачи",
+      "skills": "Навыки",
+      "nodes": "Узлы",
+      "chat": "Чат",
+      "config": "Конфигурация",
+      "debug": "Отладка",
+      "logs": "Логи"
+    },
+    "subtitles": {
+      "overview": "Статус шлюза, точки входа и быстрая проверка состояния.",
+      "channels": "Управление каналами и настройками.",
+      "instances": "Маяки присутствия подключённых клиентов и узлов.",
+      "sessions": "Просмотр активных сессий и настройка параметров.",
+      "cron": "Планирование пробуждений и периодических запусков агента.",
+      "skills": "Управление доступностью навыков и внедрением API-ключей.",
+      "nodes": "Сопряжённые устройства, возможности и экспорт команд.",
+      "chat": "Прямой чат со шлюзом для быстрого вмешательства.",
+      "config": "Безопасное редактирование ~/.clawdbot/clawdbot.json.",
+      "debug": "Снимки шлюза, события и ручные RPC-вызовы.",
+      "logs": "Отслеживание логов шлюза в реальном времени."
+    }
+  },
+  "sidebar": {
+    "collapse": "Свернуть боковую панель",
+    "expand": "Развернуть боковую панель",
+    "close": "Закрыть боковую панель",
+    "exitFocus": "Выйти из режима фокуса"
+  },
+  "chat": {
+    "placeholder": "Сообщение (↩ для отправки, Shift+↩ для переноса строки)",
+    "connect": "Подключитесь к шлюзу, чтобы начать чат…",
+    "agentMessage": "Сообщение агента",
+    "agentMessageRequired": "Требуется сообщение агента.",
+    "assistant": "Ассистент",
+    "agent": "Агент",
+    "copyMarkdown": "Копировать как markdown",
+    "copied": "Скопировано",
+    "copyFailed": "Ошибка копирования",
+    "attach": "Прикрепить",
+    "send": "Отправить"
+  },
+  "status": {
+    "health": "Состояние",
+    "ok": "ОК",
+    "offline": "Не в сети",
+    "connected": "Подключён",
+    "disconnected": "Отключён",
+    "disconnectedGateway": "Отключён от шлюза.",
+    "active": "Активен",
+    "enabled": "Включено",
+    "disabled": "Отключено",
+    "installed": "Установлено",
+    "loading": "Загрузка…",
+    "applying": "Применение…",
+    "installing": "Установка…",
+    "importing": "Импорт..."
+  },
+  "actions": {
+    "apply": "Применить",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "add": "Добавить",
+    "addJob": "Добавить задачу",
+    "enable": "Включить",
+    "disable": "Отключить",
+    "copy": "Копировать",
+    "retry": "Повторить",
+    "refresh": "Обновить",
+    "loadConfig": "Загрузить конфигурацию",
+    "loadApprovals": "Загрузить подтверждения",
+    "importRelays": "Импорт из Relays",
+    "editProfile": "Редактировать профиль"
+  },
+  "config": {
+    "categories": {
+      "gateway": "Шлюз",
+      "agents": "Агенты",
+      "authentication": "Аутентификация",
+      "models": "Модели",
+      "tools": "Инструменты",
+      "channels": "Каналы",
+      "messages": "Сообщения",
+      "commands": "Команды",
+      "browser": "Браузер",
+      "audio": "Аудио",
+      "broadcast": "Рассылка",
+      "hooks": "Хуки",
+      "logging": "Логирование",
+      "skills": "Навыки",
+      "plugins": "Плагины",
+      "discovery": "Обнаружение",
+      "bindings": "Привязки",
+      "environment": "Окружение",
+      "canvasHost": "Хост Canvas",
+      "cron": "Cron"
+    },
+    "descriptions": {
+      "gateway": "Настройки сервера шлюза (порт, аутентификация, привязка)",
+      "agents": "Конфигурации агентов, модели и идентификаторы",
+      "authentication": "API-ключи и профили аутентификации",
+      "models": "Конфигурации моделей ИИ и провайдеры",
+      "audio": "Настройки аудио ввода/вывода",
+      "browser": "Настройки автоматизации браузера",
+      "broadcast": "Настройки рассылки и уведомлений",
+      "update": "Настройки автообновления и канал релизов",
+      "messages": "Настройки обработки и маршрутизации сообщений",
+      "logging": "Уровни логирования и конфигурация вывода",
+      "canvasHost": "Рендеринг и отображение canvas",
+      "environment": "Переменные окружения для процесса шлюза"
+    },
+    "noSettings": "Нет настроек в этом разделе",
+    "hideAdvanced": "Скрыть дополнительные",
+    "showAdvanced": "Показать дополнительные",
+    "hashMissing": "Отсутствует хеш конфигурации; перезагрузите и повторите.",
+    "approvalHashMissing": "Отсутствует хеш подтверждений; перезагрузите и повторите."
+  },
+  "channels": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "discord": "Discord",
+    "slack": "Slack",
+    "signal": "Signal",
+    "imessage": "iMessage",
+    "bluebubbles": "BlueBubbles",
+    "msteams": "MS Teams",
+    "mattermost": "Mattermost"
+  },
+  "security": {
+    "host": "Хост",
+    "full": "Полный",
+    "allowlist": "Список разрешённых",
+    "deny": "Запретить",
+    "ask": "Спрашивать",
+    "always": "Всегда",
+    "defaultSecurityMode": "Режим безопасности по умолчанию.",
+    "defaultPromptPolicy": "Политика промптов по умолчанию.",
+    "allowSkillExecutables": "Разрешить исполняемые файлы навыков, перечисленные шлюзом."
+  },
+  "cron": {
+    "cronRequired": "Требуется cron-выражение.",
+    "invalidInterval": "Неверный интервал.",
+    "invalidRunTime": "Неверное время выполнения."
+  },
+  "profile": {
+    "displayName": "Отображаемое имя",
+    "avatarUrl": "URL аватара",
+    "bannerUrl": "URL баннера",
+    "bio": "О себе",
+    "bioPlaceholder": "Краткое описание или биография",
+    "avatarPlaceholder": "HTTPS URL вашего фото профиля",
+    "bannerPlaceholder": "HTTPS URL изображения баннера",
+    "lightningAddress": "Lightning адрес",
+    "lightningPlaceholder": "Lightning адрес для чаевых (LUD-16)",
+    "picture": "Фото профиля",
+    "picturePreview": "Предпросмотр фото профиля",
+    "importedRelays": "Профиль импортирован из relay. Проверьте и опубликуйте.",
+    "imported": "Профиль импортирован. Проверьте и опубликуйте.",
+    "publishFailed": "Не удалось опубликовать профиль на всех relay."
+  },
+  "theme": {
+    "dark": "Тёмная",
+    "light": "Светлая",
+    "darkTheme": "Тёмная тема",
+    "lightTheme": "Светлая тема"
+  },
+  "common": {
+    "key": "Ключ",
+    "value": "Значение JSON",
+    "enter": "Enter",
+    "apiKeySaved": "API-ключ сохранён",
+    "loggedOut": "Выход выполнен.",
+    "disabledOnboarding": "Отключено во время онбординга",
+    "newDeviceToken": "Новый токен устройства (скопируйте и сохраните надёжно):",
+    "environmentVariables": "Переменные окружения",
+    "docsNewTab": "Документация (открывается в новой вкладке)",
+    "authDocsNewTab": "Документация по аутентификации Control UI (открывается в новой вкладке)",
+    "insecureDocsNewTab": "Документация по небезопасному HTTP (открывается в новой вкладке)"
+  },
+  "language": {
+    "select": "Язык",
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ru": "Русский"
+  }
+}
