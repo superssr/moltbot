@@ -46,7 +46,7 @@
     "exitFocus": "退出专注模式"
   },
   "chat": {
-    "placeholder": "消息（↩ 发送，Shift+↩ 换行）",
+    "placeholder": "消息 (↩ 发送, Shift+↩ 换行, 可粘贴图片)",
     "connect": "连接到网关开始聊天…",
     "agentMessage": "智能体消息",
     "agentMessageRequired": "需要智能体消息。",
@@ -56,7 +56,9 @@
     "copied": "已复制",
     "copyFailed": "复制失败",
     "attach": "附加文件",
-    "send": "发送"
+    "send": "发送",
+    "placeholderWithImages": "添加消息或粘贴更多图片...",
+    "connectToChat": "连接到网关以开始聊天…"
   },
   "status": {
     "health": "状态",
@@ -118,7 +120,13 @@
       "auth": "认证",
       "env": "环境变量",
       "updates": "更新",
-      "wizard": "设置向导"
+      "wizard": "设置向导",
+      "update": "更新",
+      "meta": "元数据",
+      "ui": "界面",
+      "session": "会话",
+      "web": "网页",
+      "talk": "语音"
     },
     "descriptions": {
       "gateway": "网关服务器设置（端口、认证、绑定）",
@@ -132,7 +140,24 @@
       "messages": "消息处理和路由设置",
       "logging": "日志级别和输出配置",
       "canvasHost": "画布渲染和显示",
-      "environment": "传递给网关进程的环境变量"
+      "environment": "传递给网关进程的环境变量",
+      "env": "传递给网关进程的环境变量",
+      "auth": "API 密钥和认证配置",
+      "channels": "消息通道 (Telegram, Discord, Slack 等)",
+      "commands": "自定义斜杠命令",
+      "hooks": "Webhooks 和事件钩子",
+      "skills": "技能包和能力",
+      "tools": "工具配置 (浏览器、搜索等)",
+      "wizard": "设置向导状态和历史",
+      "meta": "网关元数据和版本信息",
+      "ui": "用户界面偏好",
+      "bindings": "快捷键绑定",
+      "session": "会话管理和持久化",
+      "cron": "定时任务和自动化",
+      "web": "Web 服务器和 API 设置",
+      "discovery": "服务发现和网络",
+      "talk": "语音和语音设置",
+      "plugins": "插件管理和扩展"
     },
     "noSettings": "此部分没有设置",
     "hideAdvanced": "隐藏高级选项",
@@ -165,7 +190,14 @@
     "always": "始终",
     "defaultSecurityMode": "默认安全模式。",
     "defaultPromptPolicy": "默认提示策略。",
-    "allowSkillExecutables": "允许网关列出的技能可执行文件。"
+    "allowSkillExecutables": "允许网关列出的技能可执行文件。",
+    "off": "关闭",
+    "onMiss": "未命中时",
+    "defaultSecurity": "默认安全模式。",
+    "defaultPrompt": "默认提示策略。",
+    "uiUnavailable": "当 UI 提示不可用时应用。",
+    "allowSkillExec": "允许 Gateway 列出的技能可执行文件。",
+    "installing": "安装中…"
   },
   "cron": {
     "cronRequired": "需要 Cron 表达式。",
@@ -275,5 +307,18 @@
     "websiteHelp": "你的个人网站",
     "nip05Help": "可验证标识符 (如 you@domain.com)",
     "lightningHelp": "用于打赏的闪电地址 (LUD-16)"
+  },
+  "execApproval": {
+    "host": "主机",
+    "agent": "代理",
+    "session": "会话",
+    "resolved": "已解析",
+    "security": "安全",
+    "ask": "询问"
+  },
+  "overview": {
+    "authDocs": "Control UI 认证文档 (新标签页打开)",
+    "tailscaleDocs": "Tailscale Serve 文档 (新标签页打开)",
+    "insecureDocs": "不安全 HTTP 文档 (新标签页打开)"
   }
 }

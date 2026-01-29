@@ -46,7 +46,7 @@
     "exitFocus": "フォーカスモードを終了"
   },
   "chat": {
-    "placeholder": "メッセージ（↩で送信、Shift+↩で改行）",
+    "placeholder": "メッセージ (↩ で送信, Shift+↩ で改行, 画像貼り付け可)",
     "connect": "チャットを開始するにはゲートウェイに接続してください…",
     "agentMessage": "エージェントメッセージ",
     "agentMessageRequired": "エージェントメッセージが必要です。",
@@ -56,7 +56,9 @@
     "copied": "コピーしました",
     "copyFailed": "コピーに失敗しました",
     "attach": "添付",
-    "send": "送信"
+    "send": "送信",
+    "placeholderWithImages": "メッセージを追加または画像を貼り付け...",
+    "connectToChat": "ゲートウェイに接続してチャットを開始…"
   },
   "status": {
     "health": "ヘルス",
@@ -118,7 +120,13 @@
       "auth": "認証",
       "env": "環境変数",
       "updates": "更新",
-      "wizard": "セットアップウィザード"
+      "wizard": "セットアップウィザード",
+      "update": "更新",
+      "meta": "メタデータ",
+      "ui": "UI",
+      "session": "セッション",
+      "web": "Web",
+      "talk": "トーク"
     },
     "descriptions": {
       "gateway": "ゲートウェイサーバー設定（ポート、認証、バインディング）",
@@ -132,7 +140,24 @@
       "messages": "メッセージ処理とルーティング設定",
       "logging": "ログレベルと出力設定",
       "canvasHost": "キャンバスレンダリングと表示",
-      "environment": "ゲートウェイプロセスに渡される環境変数"
+      "environment": "ゲートウェイプロセスに渡される環境変数",
+      "env": "ゲートウェイプロセスに渡す環境変数",
+      "auth": "APIキーと認証プロファイル",
+      "channels": "メッセージングチャネル (Telegram, Discord, Slack等)",
+      "commands": "カスタムスラッシュコマンド",
+      "hooks": "Webhookとイベントフック",
+      "skills": "スキルパックと機能",
+      "tools": "ツール設定 (ブラウザ、検索など)",
+      "wizard": "セットアップウィザードの状態と履歴",
+      "meta": "ゲートウェイメタデータとバージョン情報",
+      "ui": "ユーザーインターフェース設定",
+      "bindings": "キーバインディングとショートカット",
+      "session": "セッション管理と永続化",
+      "cron": "スケジュールされたタスクと自動化",
+      "web": "Webサーバーと API設定",
+      "discovery": "サービス検出とネットワーキング",
+      "talk": "音声と会話設定",
+      "plugins": "プラグイン管理と拡張機能"
     },
     "noSettings": "このセクションには設定がありません",
     "hideAdvanced": "詳細を非表示",
@@ -162,10 +187,17 @@
     "allowlist": "許可リスト",
     "deny": "拒否",
     "ask": "確認",
-    "always": "常時",
+    "always": "常に",
     "defaultSecurityMode": "デフォルトのセキュリティモード。",
     "defaultPromptPolicy": "デフォルトのプロンプトポリシー。",
-    "allowSkillExecutables": "ゲートウェイによってリストされたスキル実行ファイルを許可。"
+    "allowSkillExecutables": "ゲートウェイによってリストされたスキル実行ファイルを許可。",
+    "off": "オフ",
+    "onMiss": "ミス時",
+    "defaultSecurity": "デフォルトのセキュリティモード。",
+    "defaultPrompt": "デフォルトのプロンプトポリシー。",
+    "uiUnavailable": "UIプロンプトが利用できない場合に適用されます。",
+    "allowSkillExec": "ゲートウェイにリストされたスキル実行ファイルを許可。",
+    "installing": "インストール中…"
   },
   "cron": {
     "cronRequired": "Cron式が必要です。",
@@ -275,5 +307,18 @@
     "websiteHelp": "個人ウェブサイト",
     "nip05Help": "検証可能な識別子 (例: you@domain.com)",
     "lightningHelp": "投げ銭用Lightningアドレス (LUD-16)"
+  },
+  "execApproval": {
+    "host": "ホスト",
+    "agent": "エージェント",
+    "session": "セッション",
+    "resolved": "解決済み",
+    "security": "セキュリティ",
+    "ask": "確認"
+  },
+  "overview": {
+    "authDocs": "Control UI 認証ドキュメント (新しいタブで開く)",
+    "tailscaleDocs": "Tailscale Serve ドキュメント (新しいタブで開く)",
+    "insecureDocs": "安全でない HTTP ドキュメント (新しいタブで開く)"
   }
 }

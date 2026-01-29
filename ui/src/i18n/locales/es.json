@@ -46,7 +46,7 @@
     "exitFocus": "Salir del modo foco"
   },
   "chat": {
-    "placeholder": "Mensaje (↩ para enviar, Shift+↩ para salto de línea)",
+    "placeholder": "Mensaje (↩ enviar, Shift+↩ nueva línea, pegar imágenes)",
     "connect": "Conecta al gateway para comenzar a chatear…",
     "agentMessage": "Mensaje del agente",
     "agentMessageRequired": "Se requiere mensaje del agente.",
@@ -56,7 +56,9 @@
     "copied": "Copiado",
     "copyFailed": "Error al copiar",
     "attach": "Adjuntar",
-    "send": "Enviar"
+    "send": "Enviar",
+    "placeholderWithImages": "Añade un mensaje o pega más imágenes...",
+    "connectToChat": "Conecta al gateway para empezar a chatear…"
   },
   "status": {
     "health": "Salud",
@@ -118,7 +120,13 @@
       "auth": "Autenticación",
       "env": "Variables de entorno",
       "updates": "Actualizaciones",
-      "wizard": "Asistente de configuración"
+      "wizard": "Asistente de configuración",
+      "update": "Actualizaciones",
+      "meta": "Metadatos",
+      "ui": "Interfaz",
+      "session": "Sesión",
+      "web": "Web",
+      "talk": "Voz"
     },
     "descriptions": {
       "gateway": "Configuración del servidor gateway (puerto, autenticación, vinculación)",
@@ -132,7 +140,24 @@
       "messages": "Configuración de manejo y enrutamiento de mensajes",
       "logging": "Niveles de registro y configuración de salida",
       "canvasHost": "Renderizado y visualización de canvas",
-      "environment": "Variables de entorno pasadas al proceso gateway"
+      "environment": "Variables de entorno pasadas al proceso gateway",
+      "env": "Variables de entorno pasadas al proceso gateway",
+      "auth": "Claves API y perfiles de autenticación",
+      "channels": "Canales de mensajería (Telegram, Discord, Slack, etc.)",
+      "commands": "Comandos de barra personalizados",
+      "hooks": "Webhooks y hooks de eventos",
+      "skills": "Paquetes de habilidades y capacidades",
+      "tools": "Configuración de herramientas (navegador, búsqueda, etc.)",
+      "wizard": "Estado e historial del asistente de configuración",
+      "meta": "Metadatos del gateway e información de versión",
+      "ui": "Preferencias de interfaz de usuario",
+      "bindings": "Combinaciones de teclas y atajos",
+      "session": "Gestión de sesiones y persistencia",
+      "cron": "Tareas programadas y automatización",
+      "web": "Servidor web y configuración de API",
+      "discovery": "Descubrimiento de servicios y redes",
+      "talk": "Configuración de voz y habla",
+      "plugins": "Gestión de plugins y extensiones"
     },
     "noSettings": "No hay configuraciones en esta sección",
     "hideAdvanced": "Ocultar avanzado",
@@ -165,7 +190,14 @@
     "always": "Siempre",
     "defaultSecurityMode": "Modo de seguridad predeterminado.",
     "defaultPromptPolicy": "Política de prompt predeterminada.",
-    "allowSkillExecutables": "Permitir ejecutables de habilidades listados por el Gateway."
+    "allowSkillExecutables": "Permitir ejecutables de habilidades listados por el Gateway.",
+    "off": "Desactivado",
+    "onMiss": "Al fallar",
+    "defaultSecurity": "Modo de seguridad predeterminado.",
+    "defaultPrompt": "Política de prompt predeterminada.",
+    "uiUnavailable": "Se aplica cuando el prompt de UI no está disponible.",
+    "allowSkillExec": "Permitir ejecutables de habilidades listados por el Gateway.",
+    "installing": "Instalando…"
   },
   "cron": {
     "cronRequired": "Se requiere expresión cron.",
@@ -275,5 +307,18 @@
     "websiteHelp": "Tu sitio web personal",
     "nip05Help": "Identificador verificable (ej. tu@dominio.com)",
     "lightningHelp": "Dirección Lightning para propinas (LUD-16)"
+  },
+  "execApproval": {
+    "host": "Host",
+    "agent": "Agente",
+    "session": "Sesión",
+    "resolved": "Resuelto",
+    "security": "Seguridad",
+    "ask": "Preguntar"
+  },
+  "overview": {
+    "authDocs": "Docs de autenticación de Control UI (abre en nueva pestaña)",
+    "tailscaleDocs": "Docs de Tailscale Serve (abre en nueva pestaña)",
+    "insecureDocs": "Docs de HTTP inseguro (abre en nueva pestaña)"
   }
 }

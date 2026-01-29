@@ -180,26 +180,26 @@ export function renderNostrProfileForm(params: {
 
       ${renderPicturePreview()}
 
-      ${renderField("name", "Username", {
+      ${renderField("name", t("nostr.username"), {
         placeholder: "satoshi",
         maxLength: 256,
-        help: "Short username (e.g., satoshi)",
+        help: t("nostr.usernameHelp"),
       })}
 
-      ${renderField("displayName", "Display Name", {
-        placeholder: "Satoshi Nakamoto",
+      ${renderField("displayName", t("nostr.displayName"), {
+        placeholder: t("nostr.displayNamePlaceholder"),
         maxLength: 256,
-        help: "Your full display name",
+        help: t("nostr.displayNameHelp"),
       })}
 
-      ${renderField("about", "Bio", {
+      ${renderField("about", t("nostr.bio"), {
         type: "textarea",
-        placeholder: "Tell people about yourself...",
+        placeholder: t("nostr.bioPlaceholder"),
         maxLength: 2000,
         help: "A brief bio or description",
       })}
 
-      ${renderField("picture", "Avatar URL", {
+      ${renderField("picture", t("nostr.avatarUrl"), {
         type: "url",
         placeholder: "https://example.com/avatar.jpg",
         help: "HTTPS URL to your profile picture",
@@ -210,26 +210,26 @@ export function renderNostrProfileForm(params: {
             <div style="border-top: 1px solid var(--border-color); padding-top: 12px; margin-top: 12px;">
               <div style="font-weight: 500; margin-bottom: 12px; color: var(--text-muted);">Advanced</div>
 
-              ${renderField("banner", "Banner URL", {
+              ${renderField("banner", t("nostr.bannerUrl"), {
                 type: "url",
                 placeholder: "https://example.com/banner.jpg",
                 help: "HTTPS URL to a banner image",
               })}
 
-              ${renderField("website", "Website", {
+              ${renderField("website", t("nostr.website"), {
                 type: "url",
                 placeholder: "https://example.com",
-                help: "Your personal website",
+                help: t("nostr.websiteHelp"),
               })}
 
               ${renderField("nip05", "NIP-05 Identifier", {
                 placeholder: "you@example.com",
-                help: "Verifiable identifier (e.g., you@domain.com)",
+                help: t("nostr.nip05Help"),
               })}
 
-              ${renderField("lud16", "Lightning Address", {
+              ${renderField("lud16", t("nostr.lightningAddress"), {
                 placeholder: "you@getalby.com",
-                help: "Lightning address for tips (LUD-16)",
+                help: t("nostr.lightningHelp"),
               })}
             </div>
           `
@@ -249,7 +249,7 @@ export function renderNostrProfileForm(params: {
           @click=${callbacks.onImport}
           ?disabled=${state.importing || state.saving}
         >
-          ${state.importing ? "Importing..." : "Import from Relays"}
+          ${state.importing ? "Importing..." : t("nostr.importFromRelays")}
         </button>
 
         <button

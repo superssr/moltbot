@@ -39,13 +39,13 @@ export function renderExecApprovalPrompt(state: AppViewState) {
         </div>
         <div class="exec-approval-command mono">${request.command}</div>
         <div class="exec-approval-meta">
-          ${renderMetaRow("Host", request.host)}
-          ${renderMetaRow("Agent", request.agentId)}
-          ${renderMetaRow("Session", request.sessionKey)}
+          ${renderMetaRow(t("execApproval.host"), request.host)}
+          ${renderMetaRow(t("execApproval.agent"), request.agentId)}
+          ${renderMetaRow(t("execApproval.session"), request.sessionKey)}
           ${renderMetaRow("CWD", request.cwd)}
-          ${renderMetaRow("Resolved", request.resolvedPath)}
-          ${renderMetaRow("Security", request.security)}
-          ${renderMetaRow("Ask", request.ask)}
+          ${renderMetaRow(t("execApproval.resolved"), request.resolvedPath)}
+          ${renderMetaRow(t("execApproval.security"), request.security)}
+          ${renderMetaRow(t("execApproval.ask"), request.ask)}
         </div>
         ${state.execApprovalError
           ? html`<div class="exec-approval-error">${state.execApprovalError}</div>`

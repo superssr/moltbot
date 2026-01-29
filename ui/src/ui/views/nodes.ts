@@ -275,15 +275,15 @@ type ExecApprovalsState = {
 const EXEC_APPROVALS_DEFAULT_SCOPE = "__defaults__";
 
 const SECURITY_OPTIONS: Array<{ value: ExecSecurity; label: string }> = [
-  { value: "deny", label: "Deny" },
-  { value: "allowlist", label: "Allowlist" },
-  { value: "full", label: "Full" },
+  { value: "deny", label: t("security.deny") },
+  { value: "allowlist", label: t("security.allowlist") },
+  { value: "full", label: t("security.full") },
 ];
 
 const ASK_OPTIONS: Array<{ value: ExecAsk; label: string }> = [
-  { value: "off", label: "Off" },
-  { value: "on-miss", label: "On miss" },
-  { value: "always", label: "Always" },
+  { value: "off", label: t("security.off") },
+  { value: "on-miss", label: t("security.onMiss") },
+  { value: "always", label: t("security.always") },
 ];
 
 function resolveBindingsState(props: NodesProps): BindingState {
@@ -672,7 +672,7 @@ function renderExecApprovalsPolicy(state: ExecApprovalsState) {
           <div class="list-title">Security</div>
           <div class="list-sub">
             ${isDefaults
-              ? "Default security mode."
+              ? t("security.defaultSecurity")
               : `Default: ${defaults.security}.`}
           </div>
         </div>
@@ -714,7 +714,7 @@ function renderExecApprovalsPolicy(state: ExecApprovalsState) {
         <div class="list-main">
           <div class="list-title">Ask</div>
           <div class="list-sub">
-            ${isDefaults ? "Default prompt policy." : `Default: ${defaults.ask}.`}
+            ${isDefaults ? t("security.defaultPrompt") : `Default: ${defaults.ask}.`}
           </div>
         </div>
         <div class="list-meta">
@@ -756,7 +756,7 @@ function renderExecApprovalsPolicy(state: ExecApprovalsState) {
           <div class="list-title">Ask fallback</div>
           <div class="list-sub">
             ${isDefaults
-              ? "Applied when the UI prompt is unavailable."
+              ? t("security.uiUnavailable")
               : `Default: ${defaults.askFallback}.`}
           </div>
         </div>
@@ -799,7 +799,7 @@ function renderExecApprovalsPolicy(state: ExecApprovalsState) {
           <div class="list-title">Auto-allow skill CLIs</div>
           <div class="list-sub">
             ${isDefaults
-              ? "Allow skill executables listed by the Gateway."
+              ? t("security.allowSkillExec")
               : autoIsDefault
                 ? `Using default (${defaults.autoAllowSkills ? "on" : "off"}).`
                 : `Override (${autoEffective ? "on" : "off"}).`}

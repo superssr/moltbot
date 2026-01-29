@@ -46,7 +46,7 @@
     "exitFocus": "Fokusmodus verlassen"
   },
   "chat": {
-    "placeholder": "Nachricht (↩ zum Senden, Shift+↩ für Zeilenumbruch)",
+    "placeholder": "Nachricht (↩ senden, Shift+↩ Zeilenumbruch, Bilder einfügen)",
     "connect": "Verbinden Sie sich mit dem Gateway, um zu chatten…",
     "agentMessage": "Agent-Nachricht",
     "agentMessageRequired": "Agent-Nachricht erforderlich.",
@@ -56,7 +56,9 @@
     "copied": "Kopiert",
     "copyFailed": "Kopieren fehlgeschlagen",
     "attach": "Anhängen",
-    "send": "Senden"
+    "send": "Senden",
+    "placeholderWithImages": "Nachricht hinzufügen oder weitere Bilder einfügen...",
+    "connectToChat": "Mit Gateway verbinden, um zu chatten…"
   },
   "status": {
     "health": "Zustand",
@@ -118,7 +120,13 @@
       "auth": "Authentifizierung",
       "env": "Umgebungsvariablen",
       "updates": "Aktualisierungen",
-      "wizard": "Einrichtungsassistent"
+      "wizard": "Einrichtungsassistent",
+      "update": "Updates",
+      "meta": "Metadaten",
+      "ui": "Oberfläche",
+      "session": "Sitzung",
+      "web": "Web",
+      "talk": "Sprache"
     },
     "descriptions": {
       "gateway": "Gateway-Server-Einstellungen (Port, Auth, Bindung)",
@@ -132,7 +140,24 @@
       "messages": "Nachrichtenverarbeitung und Routing-Einstellungen",
       "logging": "Protokollierungsstufen und Ausgabekonfiguration",
       "canvasHost": "Canvas-Rendering und Anzeige",
-      "environment": "Umgebungsvariablen für den Gateway-Prozess"
+      "environment": "Umgebungsvariablen für den Gateway-Prozess",
+      "env": "Umgebungsvariablen für den Gateway-Prozess",
+      "auth": "API-Schlüssel und Authentifizierungsprofile",
+      "channels": "Nachrichtenkanäle (Telegram, Discord, Slack usw.)",
+      "commands": "Benutzerdefinierte Slash-Befehle",
+      "hooks": "Webhooks und Event-Hooks",
+      "skills": "Skill-Pakete und Fähigkeiten",
+      "tools": "Tool-Konfiguration (Browser, Suche usw.)",
+      "wizard": "Status und Verlauf des Setup-Assistenten",
+      "meta": "Gateway-Metadaten und Versionsinformationen",
+      "ui": "Einstellungen der Benutzeroberfläche",
+      "bindings": "Tastenkürzel und Bindungen",
+      "session": "Sitzungsverwaltung und Persistenz",
+      "cron": "Geplante Aufgaben und Automatisierung",
+      "web": "Webserver- und API-Einstellungen",
+      "discovery": "Service-Erkennung und Netzwerk",
+      "talk": "Sprach- und Sprecheinstellungen",
+      "plugins": "Plugin-Verwaltung und Erweiterungen"
     },
     "noSettings": "Keine Einstellungen in diesem Abschnitt",
     "hideAdvanced": "Erweitert ausblenden",
@@ -158,14 +183,21 @@
   },
   "security": {
     "host": "Host",
-    "full": "Voll",
+    "full": "Vollständig",
     "allowlist": "Erlaubnisliste",
     "deny": "Ablehnen",
     "ask": "Fragen",
     "always": "Immer",
     "defaultSecurityMode": "Standard-Sicherheitsmodus.",
     "defaultPromptPolicy": "Standard-Prompt-Richtlinie.",
-    "allowSkillExecutables": "Vom Gateway gelistete Fähigkeits-Executables erlauben."
+    "allowSkillExecutables": "Vom Gateway gelistete Fähigkeits-Executables erlauben.",
+    "off": "Aus",
+    "onMiss": "Bei Fehltreffer",
+    "defaultSecurity": "Standard-Sicherheitsmodus.",
+    "defaultPrompt": "Standard-Prompt-Richtlinie.",
+    "uiUnavailable": "Wird angewendet, wenn der UI-Prompt nicht verfügbar ist.",
+    "allowSkillExec": "Vom Gateway gelistete Skill-Ausführbare erlauben.",
+    "installing": "Installiere…"
   },
   "cron": {
     "cronRequired": "Cron-Ausdruck erforderlich.",
@@ -275,5 +307,18 @@
     "websiteHelp": "Deine persönliche Webseite",
     "nip05Help": "Verifizierbarer Identifikator (z.B. du@domain.com)",
     "lightningHelp": "Lightning-Adresse für Trinkgelder (LUD-16)"
+  },
+  "execApproval": {
+    "host": "Host",
+    "agent": "Agent",
+    "session": "Sitzung",
+    "resolved": "Aufgelöst",
+    "security": "Sicherheit",
+    "ask": "Fragen"
+  },
+  "overview": {
+    "authDocs": "Control UI Auth-Doku (öffnet in neuem Tab)",
+    "tailscaleDocs": "Tailscale Serve Doku (öffnet in neuem Tab)",
+    "insecureDocs": "Unsichere HTTP-Doku (öffnet in neuem Tab)"
   }
 }

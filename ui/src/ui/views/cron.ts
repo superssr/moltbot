@@ -66,8 +66,8 @@ export function renderCron(props: CronProps) {
             <div class="stat-value">
               ${props.status
                 ? props.status.enabled
-                  ? "Yes"
-                  : "No"
+                  ? t("views.yesNo.yes")
+                  : t("views.yesNo.no")
                 : "n/a"}
             </div>
           </div>

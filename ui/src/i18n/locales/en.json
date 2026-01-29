@@ -46,7 +46,7 @@
     "exitFocus": "Exit focus mode"
   },
   "chat": {
-    "placeholder": "Message (↩ to send, Shift+↩ for line breaks)",
+    "placeholder": "Message (↩ to send, Shift+↩ for line breaks, paste images)",
     "connect": "Connect to the gateway to start chatting…",
     "agentMessage": "Agent message",
     "agentMessageRequired": "Agent message required.",
@@ -56,7 +56,9 @@
     "copied": "Copied",
     "copyFailed": "Copy failed",
     "attach": "Attach",
-    "send": "Send"
+    "send": "Send",
+    "placeholderWithImages": "Add a message or paste more images...",
+    "connectToChat": "Connect to the gateway to start chatting…"
   },
   "status": {
     "health": "Health",
@@ -118,7 +120,13 @@
       "canvasHost": "Canvas Host",
       "cron": "Cron",
       "updates": "Updates",
-      "wizard": "Setup Wizard"
+      "wizard": "Setup Wizard",
+      "update": "Updates",
+      "meta": "Metadata",
+      "ui": "UI",
+      "session": "Session",
+      "web": "Web",
+      "talk": "Talk"
     },
     "descriptions": {
       "gateway": "Gateway server settings (port, auth, binding)",
@@ -132,7 +140,24 @@
       "messages": "Message handling and routing settings",
       "logging": "Log levels and output configuration",
       "canvasHost": "Canvas rendering and display",
-      "environment": "Environment variables passed to the gateway process"
+      "environment": "Environment variables passed to the gateway process",
+      "env": "Environment variables passed to the gateway process",
+      "auth": "API keys and authentication profiles",
+      "channels": "Messaging channels (Telegram, Discord, Slack, etc.)",
+      "commands": "Custom slash commands",
+      "hooks": "Webhooks and event hooks",
+      "skills": "Skill packs and capabilities",
+      "tools": "Tool configurations (browser, search, etc.)",
+      "wizard": "Setup wizard state and history",
+      "meta": "Gateway metadata and version information",
+      "ui": "User interface preferences",
+      "bindings": "Key bindings and shortcuts",
+      "session": "Session management and persistence",
+      "cron": "Scheduled tasks and automation",
+      "web": "Web server and API settings",
+      "discovery": "Service discovery and networking",
+      "talk": "Voice and speech settings",
+      "plugins": "Plugin management and extensions"
     },
     "noSettings": "No settings in this section",
     "hideAdvanced": "Hide Advanced",
@@ -165,7 +190,14 @@
     "always": "Always",
     "defaultSecurityMode": "Default security mode.",
     "defaultPromptPolicy": "Default prompt policy.",
-    "allowSkillExecutables": "Allow skill executables listed by the Gateway."
+    "allowSkillExecutables": "Allow skill executables listed by the Gateway.",
+    "off": "Off",
+    "onMiss": "On miss",
+    "defaultSecurity": "Default security mode.",
+    "defaultPrompt": "Default prompt policy.",
+    "uiUnavailable": "Applied when the UI prompt is unavailable.",
+    "allowSkillExec": "Allow skill executables listed by the Gateway.",
+    "installing": "Installing…"
   },
   "cron": {
     "cronRequired": "Cron expression required.",
@@ -275,5 +307,18 @@
     "websiteHelp": "Your personal website",
     "nip05Help": "Verifiable identifier (e.g., you@domain.com)",
     "lightningHelp": "Lightning address for tips (LUD-16)"
+  },
+  "execApproval": {
+    "host": "Host",
+    "agent": "Agent",
+    "session": "Session",
+    "resolved": "Resolved",
+    "security": "Security",
+    "ask": "Ask"
+  },
+  "overview": {
+    "authDocs": "Control UI auth docs (opens in new tab)",
+    "tailscaleDocs": "Tailscale Serve docs (opens in new tab)",
+    "insecureDocs": "Insecure HTTP docs (opens in new tab)"
   }
 }

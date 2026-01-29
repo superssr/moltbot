@@ -46,7 +46,7 @@
     "exitFocus": "Sair do modo foco"
   },
   "chat": {
-    "placeholder": "Mensagem (↩ para enviar, Shift+↩ para quebra de linha)",
+    "placeholder": "Mensagem (↩ enviar, Shift+↩ nova linha, colar imagens)",
     "connect": "Conecte ao gateway para começar a conversar…",
     "agentMessage": "Mensagem do agente",
     "agentMessageRequired": "Mensagem do agente obrigatória.",
@@ -56,7 +56,9 @@
     "copied": "Copiado",
     "copyFailed": "Falha ao copiar",
     "attach": "Anexar",
-    "send": "Enviar"
+    "send": "Enviar",
+    "placeholderWithImages": "Adicione uma mensagem ou cole mais imagens...",
+    "connectToChat": "Conecte-se ao gateway para começar a conversar…"
   },
   "status": {
     "health": "Saúde",
@@ -118,7 +120,13 @@
       "auth": "Autenticação",
       "env": "Variáveis de ambiente",
       "updates": "Atualizações",
-      "wizard": "Assistente de configuração"
+      "wizard": "Assistente de configuração",
+      "update": "Atualizações",
+      "meta": "Metadados",
+      "ui": "Interface",
+      "session": "Sessão",
+      "web": "Web",
+      "talk": "Fala"
     },
     "descriptions": {
       "gateway": "Configurações do servidor gateway (porta, autenticação, vínculo)",
@@ -132,7 +140,24 @@
       "messages": "Configurações de tratamento e roteamento de mensagens",
       "logging": "Níveis de registro e configuração de saída",
       "canvasHost": "Renderização e exibição do canvas",
-      "environment": "Variáveis de ambiente passadas ao processo gateway"
+      "environment": "Variáveis de ambiente passadas ao processo gateway",
+      "env": "Variáveis de ambiente passadas ao processo gateway",
+      "auth": "Chaves de API e perfis de autenticação",
+      "channels": "Canais de mensagens (Telegram, Discord, Slack, etc.)",
+      "commands": "Comandos de barra personalizados",
+      "hooks": "Webhooks e hooks de eventos",
+      "skills": "Pacotes de habilidades e capacidades",
+      "tools": "Configuração de ferramentas (navegador, busca, etc.)",
+      "wizard": "Estado e histórico do assistente de configuração",
+      "meta": "Metadados do gateway e informações de versão",
+      "ui": "Preferências de interface do usuário",
+      "bindings": "Atalhos de teclado e associações",
+      "session": "Gerenciamento de sessão e persistência",
+      "cron": "Tarefas agendadas e automação",
+      "web": "Servidor web e configurações de API",
+      "discovery": "Descoberta de serviços e rede",
+      "talk": "Configurações de voz e fala",
+      "plugins": "Gerenciamento de plugins e extensões"
     },
     "noSettings": "Nenhuma configuração nesta seção",
     "hideAdvanced": "Ocultar avançado",
@@ -165,7 +190,14 @@
     "always": "Sempre",
     "defaultSecurityMode": "Modo de segurança padrão.",
     "defaultPromptPolicy": "Política de prompt padrão.",
-    "allowSkillExecutables": "Permitir executáveis de habilidades listados pelo Gateway."
+    "allowSkillExecutables": "Permitir executáveis de habilidades listados pelo Gateway.",
+    "off": "Desligado",
+    "onMiss": "Quando falhar",
+    "defaultSecurity": "Modo de segurança padrão.",
+    "defaultPrompt": "Política de prompt padrão.",
+    "uiUnavailable": "Aplicado quando o prompt da UI não está disponível.",
+    "allowSkillExec": "Permitir executáveis de habilidades listados pelo Gateway.",
+    "installing": "Instalando…"
   },
   "cron": {
     "cronRequired": "Expressão cron obrigatória.",
@@ -275,5 +307,18 @@
     "websiteHelp": "Seu site pessoal",
     "nip05Help": "Identificador verificável (ex. voce@dominio.com)",
     "lightningHelp": "Endereço Lightning para gorjetas (LUD-16)"
+  },
+  "execApproval": {
+    "host": "Host",
+    "agent": "Agente",
+    "session": "Sessão",
+    "resolved": "Resolvido",
+    "security": "Segurança",
+    "ask": "Perguntar"
+  },
+  "overview": {
+    "authDocs": "Docs de autenticação Control UI (abre em nova aba)",
+    "tailscaleDocs": "Docs Tailscale Serve (abre em nova aba)",
+    "insecureDocs": "Docs HTTP inseguro (abre em nova aba)"
   }
 }

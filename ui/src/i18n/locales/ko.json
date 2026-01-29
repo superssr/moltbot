@@ -46,7 +46,7 @@
     "exitFocus": "포커스 모드 종료"
   },
   "chat": {
-    "placeholder": "메시지 (↩로 전송, Shift+↩로 줄바꿈)",
+    "placeholder": "메시지 (↩ 전송, Shift+↩ 줄바꿈, 이미지 붙여넣기 가능)",
     "connect": "채팅을 시작하려면 게이트웨이에 연결하세요…",
     "agentMessage": "에이전트 메시지",
     "agentMessageRequired": "에이전트 메시지가 필요합니다.",
@@ -56,7 +56,9 @@
     "copied": "복사됨",
     "copyFailed": "복사 실패",
     "attach": "첨부",
-    "send": "보내기"
+    "send": "보내기",
+    "placeholderWithImages": "메시지 추가 또는 이미지 붙여넣기...",
+    "connectToChat": "게이트웨이에 연결하여 채팅 시작…"
   },
   "status": {
     "health": "상태",
@@ -118,7 +120,13 @@
       "auth": "인증",
       "env": "환경 변수",
       "updates": "업데이트",
-      "wizard": "설정 마법사"
+      "wizard": "설정 마법사",
+      "update": "업데이트",
+      "meta": "메타데이터",
+      "ui": "UI",
+      "session": "세션",
+      "web": "웹",
+      "talk": "토크"
     },
     "descriptions": {
       "gateway": "게이트웨이 서버 설정 (포트, 인증, 바인딩)",
@@ -132,7 +140,24 @@
       "messages": "메시지 처리 및 라우팅 설정",
       "logging": "로그 레벨 및 출력 구성",
       "canvasHost": "캔버스 렌더링 및 디스플레이",
-      "environment": "게이트웨이 프로세스에 전달되는 환경 변수"
+      "environment": "게이트웨이 프로세스에 전달되는 환경 변수",
+      "env": "게이트웨이 프로세스에 전달되는 환경 변수",
+      "auth": "API 키 및 인증 프로필",
+      "channels": "메시징 채널 (Telegram, Discord, Slack 등)",
+      "commands": "사용자 정의 슬래시 명령",
+      "hooks": "웹훅 및 이벤트 훅",
+      "skills": "스킬 팩 및 기능",
+      "tools": "도구 구성 (브라우저, 검색 등)",
+      "wizard": "설정 마법사 상태 및 기록",
+      "meta": "게이트웨이 메타데이터 및 버전 정보",
+      "ui": "사용자 인터페이스 기본 설정",
+      "bindings": "키 바인딩 및 단축키",
+      "session": "세션 관리 및 지속성",
+      "cron": "예약된 작업 및 자동화",
+      "web": "웹 서버 및 API 설정",
+      "discovery": "서비스 검색 및 네트워킹",
+      "talk": "음성 및 음성 설정",
+      "plugins": "플러그인 관리 및 확장"
     },
     "noSettings": "이 섹션에 설정이 없습니다",
     "hideAdvanced": "고급 숨기기",
@@ -165,7 +190,14 @@
     "always": "항상",
     "defaultSecurityMode": "기본 보안 모드.",
     "defaultPromptPolicy": "기본 프롬프트 정책.",
-    "allowSkillExecutables": "게이트웨이가 나열한 스킬 실행 파일 허용."
+    "allowSkillExecutables": "게이트웨이가 나열한 스킬 실행 파일 허용.",
+    "off": "끄기",
+    "onMiss": "미스 시",
+    "defaultSecurity": "기본 보안 모드.",
+    "defaultPrompt": "기본 프롬프트 정책.",
+    "uiUnavailable": "UI 프롬프트를 사용할 수 없을 때 적용됩니다.",
+    "allowSkillExec": "게이트웨이에 나열된 스킬 실행 파일 허용.",
+    "installing": "설치 중…"
   },
   "cron": {
     "cronRequired": "Cron 표현식이 필요합니다.",
@@ -275,5 +307,18 @@
     "websiteHelp": "개인 웹사이트",
     "nip05Help": "검증 가능한 식별자 (예: you@domain.com)",
     "lightningHelp": "팁을 위한 Lightning 주소 (LUD-16)"
+  },
+  "execApproval": {
+    "host": "호스트",
+    "agent": "에이전트",
+    "session": "세션",
+    "resolved": "해결됨",
+    "security": "보안",
+    "ask": "확인"
+  },
+  "overview": {
+    "authDocs": "Control UI 인증 문서 (새 탭에서 열기)",
+    "tailscaleDocs": "Tailscale Serve 문서 (새 탭에서 열기)",
+    "insecureDocs": "안전하지 않은 HTTP 문서 (새 탭에서 열기)"
   }
 }

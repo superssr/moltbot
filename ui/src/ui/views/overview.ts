@@ -53,7 +53,7 @@ export function renderOverview(props: OverviewProps) {
               href="https://docs.molt.bot/web/dashboard"
               target="_blank"
               rel="noreferrer"
-              title="Control UI auth docs (opens in new tab)"
+              title=${t("overview.authDocs")}
               >Docs: Control UI auth</a
             >
           </div>
@@ -71,7 +71,7 @@ export function renderOverview(props: OverviewProps) {
             href="https://docs.molt.bot/web/dashboard"
             target="_blank"
             rel="noreferrer"
-            title="Control UI auth docs (opens in new tab)"
+            title=${t("overview.authDocs")}
             >Docs: Control UI auth</a
           >
         </div>
@@ -100,7 +100,7 @@ export function renderOverview(props: OverviewProps) {
             href="https://docs.molt.bot/gateway/tailscale"
             target="_blank"
             rel="noreferrer"
-            title="Tailscale Serve docs (opens in new tab)"
+            title=${t("overview.tailscaleDocs")}
             >Docs: Tailscale Serve</a
           >
           <span class="muted"> · </span>
@@ -109,7 +109,7 @@ export function renderOverview(props: OverviewProps) {
             href="https://docs.molt.bot/web/control-ui#insecure-http"
             target="_blank"
             rel="noreferrer"
-            title="Insecure HTTP docs (opens in new tab)"
+            title=${t("overview.insecureDocs")}
             >Docs: Insecure HTTP</a
           >
         </div>

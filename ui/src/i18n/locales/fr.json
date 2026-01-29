@@ -46,7 +46,7 @@
     "exitFocus": "Quitter le mode focus"
   },
   "chat": {
-    "placeholder": "Message (↩ pour envoyer, Shift+↩ pour saut de ligne)",
+    "placeholder": "Message (↩ envoyer, Shift+↩ nouvelle ligne, coller des images)",
     "connect": "Connectez-vous au Gateway pour commencer à discuter…",
     "agentMessage": "Message de l'agent",
     "agentMessageRequired": "Message de l'agent requis.",
@@ -56,7 +56,9 @@
     "copied": "Copié",
     "copyFailed": "Échec de la copie",
     "attach": "Joindre",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "placeholderWithImages": "Ajoutez un message ou collez plus d'images...",
+    "connectToChat": "Connectez-vous au Gateway pour commencer à discuter…"
   },
   "status": {
     "health": "Santé",
@@ -118,7 +120,13 @@
       "auth": "Authentification",
       "env": "Variables d'environnement",
       "updates": "Mises à jour",
-      "wizard": "Assistant de configuration"
+      "wizard": "Assistant de configuration",
+      "update": "Mises à jour",
+      "meta": "Métadonnées",
+      "ui": "Interface",
+      "session": "Session",
+      "web": "Web",
+      "talk": "Parole"
     },
     "descriptions": {
       "gateway": "Paramètres du serveur Gateway (port, auth, liaison)",
@@ -132,7 +140,24 @@
       "messages": "Paramètres de gestion et routage des messages",
       "logging": "Niveaux de journalisation et configuration de sortie",
       "canvasHost": "Rendu et affichage du canvas",
-      "environment": "Variables d'environnement passées au processus Gateway"
+      "environment": "Variables d'environnement passées au processus Gateway",
+      "env": "Variables d'environnement transmises au processus Gateway",
+      "auth": "Clés API et profils d'authentification",
+      "channels": "Canaux de messagerie (Telegram, Discord, Slack, etc.)",
+      "commands": "Commandes slash personnalisées",
+      "hooks": "Webhooks et hooks d'événements",
+      "skills": "Packs de compétences et capacités",
+      "tools": "Configuration des outils (navigateur, recherche, etc.)",
+      "wizard": "État et historique de l'assistant de configuration",
+      "meta": "Métadonnées du Gateway et informations de version",
+      "ui": "Préférences de l'interface utilisateur",
+      "bindings": "Raccourcis clavier et liaisons",
+      "session": "Gestion des sessions et persistance",
+      "cron": "Tâches planifiées et automatisation",
+      "web": "Serveur web et paramètres API",
+      "discovery": "Découverte de services et réseau",
+      "talk": "Paramètres vocaux et de parole",
+      "plugins": "Gestion des plugins et extensions"
     },
     "noSettings": "Aucun paramètre dans cette section",
     "hideAdvanced": "Masquer avancé",
@@ -165,7 +190,14 @@
     "always": "Toujours",
     "defaultSecurityMode": "Mode de sécurité par défaut.",
     "defaultPromptPolicy": "Politique de prompt par défaut.",
-    "allowSkillExecutables": "Autoriser les exécutables de compétences listés par le Gateway."
+    "allowSkillExecutables": "Autoriser les exécutables de compétences listés par le Gateway.",
+    "off": "Désactivé",
+    "onMiss": "En cas d'échec",
+    "defaultSecurity": "Mode de sécurité par défaut.",
+    "defaultPrompt": "Politique de prompt par défaut.",
+    "uiUnavailable": "S'applique lorsque le prompt UI n'est pas disponible.",
+    "allowSkillExec": "Autoriser les exécutables de compétences listés par le Gateway.",
+    "installing": "Installation…"
   },
   "cron": {
     "cronRequired": "Expression cron requise.",
@@ -275,5 +307,18 @@
     "websiteHelp": "Votre site web personnel",
     "nip05Help": "Identifiant vérifiable (ex. vous@domaine.com)",
     "lightningHelp": "Adresse Lightning pour les pourboires (LUD-16)"
+  },
+  "execApproval": {
+    "host": "Hôte",
+    "agent": "Agent",
+    "session": "Session",
+    "resolved": "Résolu",
+    "security": "Sécurité",
+    "ask": "Demander"
+  },
+  "overview": {
+    "authDocs": "Docs auth Control UI (ouvre dans un nouvel onglet)",
+    "tailscaleDocs": "Docs Tailscale Serve (ouvre dans un nouvel onglet)",
+    "insecureDocs": "Docs HTTP non sécurisé (ouvre dans un nouvel onglet)"
   }
 }
