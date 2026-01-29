@@ -23,19 +23,19 @@ export function renderWhatsAppCard(params: {
       <div class="status-list" style="margin-top: 16px;">
         <div>
           <span class="label">Configured</span>
-          <span>${whatsapp?.configured ? "Yes" : "No"}</span>
+          <span>${whatsapp?.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Linked</span>
-          <span>${whatsapp?.linked ? "Yes" : "No"}</span>
+          <span>${whatsapp?.linked ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Running</span>
-          <span>${whatsapp?.running ? "Yes" : "No"}</span>
+          <span>${whatsapp?.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Connected</span>
-          <span>${whatsapp?.connected ? "Yes" : "No"}</span>
+          <span>${whatsapp?.connected ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Last connect</span>

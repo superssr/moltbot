@@ -72,7 +72,8 @@
     "loading": "로딩 중…",
     "applying": "적용 중…",
     "installing": "설치 중…",
-    "importing": "가져오는 중..."
+    "importing": "가져오는 중...",
+    "updating": "업데이트 중…"
   },
   "actions": {
     "apply": "적용",
@@ -113,7 +114,11 @@
       "bindings": "바인딩",
       "environment": "환경",
       "canvasHost": "캔버스 호스트",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "인증",
+      "env": "환경 변수",
+      "updates": "업데이트",
+      "wizard": "설정 마법사"
     },
     "descriptions": {
       "gateway": "게이트웨이 서버 설정 (포트, 인증, 바인딩)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "고급 숨기기",
     "showAdvanced": "고급 표시",
     "hashMissing": "구성 해시가 없습니다. 다시 로드하고 재시도하세요.",
-    "approvalHashMissing": "실행 승인 해시가 없습니다. 다시 로드하고 재시도하세요."
+    "approvalHashMissing": "실행 승인 해시가 없습니다. 다시 로드하고 재시도하세요.",
+    "allSettings": "모든 설정",
+    "form": "폼",
+    "raw": "Raw",
+    "searchSettings": "설정 검색...",
+    "unsavedChanges": "저장되지 않은 변경"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "아니오",
       "na": "해당없음"
     }
+  },
+  "nostr": {
+    "username": "사용자명",
+    "displayName": "표시 이름",
+    "bio": "소개",
+    "avatarUrl": "아바타 URL",
+    "bannerUrl": "배너 URL",
+    "website": "웹사이트",
+    "lightningAddress": "Lightning 주소",
+    "importFromRelays": "릴레이에서 가져오기",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "사토시 나카모토",
+    "bioPlaceholder": "자기소개를 작성하세요...",
+    "usernameHelp": "짧은 사용자명 (예: satoshi)",
+    "displayNameHelp": "전체 표시 이름",
+    "websiteHelp": "개인 웹사이트",
+    "nip05Help": "검증 가능한 식별자 (예: you@domain.com)",
+    "lightningHelp": "팁을 위한 Lightning 주소 (LUD-16)"
   }
 }

@@ -22,11 +22,11 @@ export function renderSlackCard(params: {
       <div class="status-list" style="margin-top: 16px;">
         <div>
           <span class="label">Configured</span>
-          <span>${slack?.configured ? "Yes" : "No"}</span>
+          <span>${slack?.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Running</span>
-          <span>${slack?.running ? "Yes" : "No"}</span>
+          <span>${slack?.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Last start</span>

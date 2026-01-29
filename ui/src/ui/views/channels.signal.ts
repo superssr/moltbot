@@ -22,15 +22,15 @@ export function renderSignalCard(params: {
       <div class="status-list" style="margin-top: 16px;">
         <div>
           <span class="label">Configured</span>
-          <span>${signal?.configured ? "Yes" : "No"}</span>
+          <span>${signal?.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Running</span>
-          <span>${signal?.running ? "Yes" : "No"}</span>
+          <span>${signal?.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Base URL</span>
-          <span>${signal?.baseUrl ?? "n/a"}</span>
+          <span>${signal?.baseUrl ?? t("views.yesNo.na")}</span>
         </div>
         <div>
           <span class="label">Last start</span>

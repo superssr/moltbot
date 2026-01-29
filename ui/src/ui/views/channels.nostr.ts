@@ -66,11 +66,11 @@ export function renderNostrCard(params: {
         <div class="status-list account-card-status">
           <div>
             <span class="label">Running</span>
-            <span>${account.running ? "Yes" : "No"}</span>
+            <span>${account.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
           </div>
           <div>
             <span class="label">Configured</span>
-            <span>${account.configured ? "Yes" : "No"}</span>
+            <span>${account.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
           </div>
           <div>
             <span class="label">Public Key</span>
@@ -183,11 +183,11 @@ export function renderNostrCard(params: {
             <div class="status-list" style="margin-top: 16px;">
               <div>
                 <span class="label">Configured</span>
-                <span>${summaryConfigured ? "Yes" : "No"}</span>
+                <span>${summaryConfigured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
               <div>
                 <span class="label">Running</span>
-                <span>${summaryRunning ? "Yes" : "No"}</span>
+                <span>${summaryRunning ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
               <div>
                 <span class="label">Public Key</span>

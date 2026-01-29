@@ -72,7 +72,8 @@
     "loading": "Loading…",
     "applying": "Applying…",
     "installing": "Installing…",
-    "importing": "Importing..."
+    "importing": "Importing...",
+    "updating": "Updating…"
   },
   "actions": {
     "apply": "Apply",
@@ -96,6 +97,7 @@
     "categories": {
       "gateway": "Gateway",
       "agents": "Agents",
+      "auth": "Authentication",
       "authentication": "Authentication",
       "models": "Models",
       "tools": "Tools",
@@ -111,9 +113,12 @@
       "plugins": "Plugins",
       "discovery": "Discovery",
       "bindings": "Bindings",
+      "env": "Environment",
       "environment": "Environment",
       "canvasHost": "Canvas Host",
-      "cron": "Cron"
+      "cron": "Cron",
+      "updates": "Updates",
+      "wizard": "Setup Wizard"
     },
     "descriptions": {
       "gateway": "Gateway server settings (port, auth, binding)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "Hide Advanced",
     "showAdvanced": "Show Advanced",
     "hashMissing": "Config hash missing; reload and retry.",
-    "approvalHashMissing": "Exec approvals hash missing; reload and retry."
+    "approvalHashMissing": "Exec approvals hash missing; reload and retry.",
+    "allSettings": "All Settings",
+    "form": "Form",
+    "raw": "Raw",
+    "searchSettings": "Search settings...",
+    "unsavedChanges": "Unsaved changes"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "No",
       "na": "n/a"
     }
+  },
+  "nostr": {
+    "username": "Username",
+    "displayName": "Display Name",
+    "bio": "Bio",
+    "avatarUrl": "Avatar URL",
+    "bannerUrl": "Banner URL",
+    "website": "Website",
+    "lightningAddress": "Lightning Address",
+    "importFromRelays": "Import from Relays",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "Satoshi Nakamoto",
+    "bioPlaceholder": "Tell people about yourself...",
+    "usernameHelp": "Short username (e.g., satoshi)",
+    "displayNameHelp": "Your full display name",
+    "websiteHelp": "Your personal website",
+    "nip05Help": "Verifiable identifier (e.g., you@domain.com)",
+    "lightningHelp": "Lightning address for tips (LUD-16)"
   }
 }

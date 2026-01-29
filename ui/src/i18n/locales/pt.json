@@ -72,7 +72,8 @@
     "loading": "Carregando…",
     "applying": "Aplicando…",
     "installing": "Instalando…",
-    "importing": "Importando..."
+    "importing": "Importando...",
+    "updating": "Atualizando…"
   },
   "actions": {
     "apply": "Aplicar",
@@ -113,7 +114,11 @@
       "bindings": "Vínculos",
       "environment": "Ambiente",
       "canvasHost": "Host Canvas",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "Autenticação",
+      "env": "Variáveis de ambiente",
+      "updates": "Atualizações",
+      "wizard": "Assistente de configuração"
     },
     "descriptions": {
       "gateway": "Configurações do servidor gateway (porta, autenticação, vínculo)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "Ocultar avançado",
     "showAdvanced": "Mostrar avançado",
     "hashMissing": "Hash de configuração ausente; recarregue e tente novamente.",
-    "approvalHashMissing": "Hash de aprovações ausente; recarregue e tente novamente."
+    "approvalHashMissing": "Hash de aprovações ausente; recarregue e tente novamente.",
+    "allSettings": "Todas as configurações",
+    "form": "Formulário",
+    "raw": "Raw",
+    "searchSettings": "Pesquisar configurações...",
+    "unsavedChanges": "Alterações não salvas"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "Não",
       "na": "N/A"
     }
+  },
+  "nostr": {
+    "username": "Nome de usuário",
+    "displayName": "Nome de exibição",
+    "bio": "Bio",
+    "avatarUrl": "URL do avatar",
+    "bannerUrl": "URL do banner",
+    "website": "Website",
+    "lightningAddress": "Endereço Lightning",
+    "importFromRelays": "Importar de relays",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "Satoshi Nakamoto",
+    "bioPlaceholder": "Conte-nos sobre você...",
+    "usernameHelp": "Nome curto (ex. satoshi)",
+    "displayNameHelp": "Seu nome completo",
+    "websiteHelp": "Seu site pessoal",
+    "nip05Help": "Identificador verificável (ex. voce@dominio.com)",
+    "lightningHelp": "Endereço Lightning para gorjetas (LUD-16)"
   }
 }

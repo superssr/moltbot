@@ -30,11 +30,11 @@ export function renderTelegramCard(params: {
         <div class="status-list account-card-status">
           <div>
             <span class="label">Running</span>
-            <span>${account.running ? "Yes" : "No"}</span>
+            <span>${account.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
           </div>
           <div>
             <span class="label">Configured</span>
-            <span>${account.configured ? "Yes" : "No"}</span>
+            <span>${account.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
           </div>
           <div>
             <span class="label">Last inbound</span>
@@ -68,15 +68,15 @@ export function renderTelegramCard(params: {
             <div class="status-list" style="margin-top: 16px;">
               <div>
                 <span class="label">Configured</span>
-                <span>${telegram?.configured ? "Yes" : "No"}</span>
+                <span>${telegram?.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
               <div>
                 <span class="label">Running</span>
-                <span>${telegram?.running ? "Yes" : "No"}</span>
+                <span>${telegram?.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
               <div>
                 <span class="label">Mode</span>
-                <span>${telegram?.mode ?? "n/a"}</span>
+                <span>${telegram?.mode ?? t("views.yesNo.na")}</span>
               </div>
               <div>
                 <span class="label">Last start</span>

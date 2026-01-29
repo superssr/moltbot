@@ -89,7 +89,7 @@ export function renderChannels(props: ChannelsProps) {
           </div>`
         : nothing}
       <pre class="code-block" style="margin-top: 12px;">
-${props.snapshot ? JSON.stringify(props.snapshot, null, 2) : "No snapshot yet."}
+${props.snapshot ? JSON.stringify(props.snapshot, null, 2) : t("views.noSnapshotYet")}
       </pre>
     </section>
   `;
@@ -229,15 +229,15 @@ function renderGenericChannelCard(
             <div class="status-list" style="margin-top: 16px;">
               <div>
                 <span class="label">Configured</span>
-                <span>${configured == null ? "n/a" : configured ? "Yes" : "No"}</span>
+                <span>${configured == null ? t("views.yesNo.na") : configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
               <div>
                 <span class="label">Running</span>
-                <span>${running == null ? "n/a" : running ? "Yes" : "No"}</span>
+                <span>${running == null ? t("views.yesNo.na") : running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
               <div>
                 <span class="label">Connected</span>
-                <span>${connected == null ? "n/a" : connected ? "Yes" : "No"}</span>
+                <span>${connected == null ? t("views.yesNo.na") : connected ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
               </div>
             </div>
           `}
@@ -307,7 +307,7 @@ function renderGenericAccount(account: ChannelAccountSnapshot) {
         </div>
         <div>
           <span class="label">Configured</span>
-          <span>${account.configured ? "Yes" : "No"}</span>
+          <span>${account.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Connected</span>

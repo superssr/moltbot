@@ -72,7 +72,8 @@
     "loading": "Cargando…",
     "applying": "Aplicando…",
     "installing": "Instalando…",
-    "importing": "Importando..."
+    "importing": "Importando...",
+    "updating": "Actualizando…"
   },
   "actions": {
     "apply": "Aplicar",
@@ -113,7 +114,11 @@
       "bindings": "Vinculaciones",
       "environment": "Entorno",
       "canvasHost": "Host Canvas",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "Autenticación",
+      "env": "Variables de entorno",
+      "updates": "Actualizaciones",
+      "wizard": "Asistente de configuración"
     },
     "descriptions": {
       "gateway": "Configuración del servidor gateway (puerto, autenticación, vinculación)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "Ocultar avanzado",
     "showAdvanced": "Mostrar avanzado",
     "hashMissing": "Falta el hash de configuración; recarga e intenta de nuevo.",
-    "approvalHashMissing": "Falta el hash de aprobaciones; recarga e intenta de nuevo."
+    "approvalHashMissing": "Falta el hash de aprobaciones; recarga e intenta de nuevo.",
+    "allSettings": "Todas las opciones",
+    "form": "Formulario",
+    "raw": "Raw",
+    "searchSettings": "Buscar opciones...",
+    "unsavedChanges": "Cambios sin guardar"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "No",
       "na": "N/A"
     }
+  },
+  "nostr": {
+    "username": "Nombre de usuario",
+    "displayName": "Nombre para mostrar",
+    "bio": "Biografía",
+    "avatarUrl": "URL del avatar",
+    "bannerUrl": "URL del banner",
+    "website": "Sitio web",
+    "lightningAddress": "Dirección Lightning",
+    "importFromRelays": "Importar desde relays",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "Satoshi Nakamoto",
+    "bioPlaceholder": "Cuéntanos sobre ti...",
+    "usernameHelp": "Nombre corto (ej. satoshi)",
+    "displayNameHelp": "Tu nombre completo",
+    "websiteHelp": "Tu sitio web personal",
+    "nip05Help": "Identificador verificable (ej. tu@dominio.com)",
+    "lightningHelp": "Dirección Lightning para propinas (LUD-16)"
   }
 }

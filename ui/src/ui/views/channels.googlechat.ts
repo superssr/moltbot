@@ -22,15 +22,15 @@ export function renderGoogleChatCard(params: {
       <div class="status-list" style="margin-top: 16px;">
         <div>
           <span class="label">Configured</span>
-          <span>${googleChat ? (googleChat.configured ? "Yes" : "No") : "n/a"}</span>
+          <span>${googleChat ? (googleChat.configured ? t("views.yesNo.yes") : t("views.yesNo.no")) : "n/a"}</span>
         </div>
         <div>
           <span class="label">Running</span>
-          <span>${googleChat ? (googleChat.running ? "Yes" : "No") : "n/a"}</span>
+          <span>${googleChat ? (googleChat.running ? t("views.yesNo.yes") : t("views.yesNo.no")) : "n/a"}</span>
         </div>
         <div>
           <span class="label">Credential</span>
-          <span>${googleChat?.credentialSource ?? "n/a"}</span>
+          <span>${googleChat?.credentialSource ?? t("views.yesNo.na")}</span>
         </div>
         <div>
           <span class="label">Audience</span>

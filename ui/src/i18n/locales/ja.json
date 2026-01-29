@@ -72,7 +72,8 @@
     "loading": "読み込み中…",
     "applying": "適用中…",
     "installing": "インストール中…",
-    "importing": "インポート中..."
+    "importing": "インポート中...",
+    "updating": "更新中…"
   },
   "actions": {
     "apply": "適用",
@@ -113,7 +114,11 @@
       "bindings": "バインディング",
       "environment": "環境",
       "canvasHost": "キャンバスホスト",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "認証",
+      "env": "環境変数",
+      "updates": "更新",
+      "wizard": "セットアップウィザード"
     },
     "descriptions": {
       "gateway": "ゲートウェイサーバー設定（ポート、認証、バインディング）",
@@ -133,7 +138,12 @@
     "hideAdvanced": "詳細を非表示",
     "showAdvanced": "詳細を表示",
     "hashMissing": "設定ハッシュがありません。再読み込みして再試行してください。",
-    "approvalHashMissing": "実行承認ハッシュがありません。再読み込みして再試行してください。"
+    "approvalHashMissing": "実行承認ハッシュがありません。再読み込みして再試行してください。",
+    "allSettings": "すべての設定",
+    "form": "フォーム",
+    "raw": "Raw",
+    "searchSettings": "設定を検索...",
+    "unsavedChanges": "未保存の変更"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "いいえ",
       "na": "該当なし"
     }
+  },
+  "nostr": {
+    "username": "ユーザー名",
+    "displayName": "表示名",
+    "bio": "自己紹介",
+    "avatarUrl": "アバターURL",
+    "bannerUrl": "バナーURL",
+    "website": "ウェブサイト",
+    "lightningAddress": "Lightningアドレス",
+    "importFromRelays": "リレーからインポート",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "サトシ・ナカモト",
+    "bioPlaceholder": "自己紹介を書いてください...",
+    "usernameHelp": "短いユーザー名 (例: satoshi)",
+    "displayNameHelp": "フル表示名",
+    "websiteHelp": "個人ウェブサイト",
+    "nip05Help": "検証可能な識別子 (例: you@domain.com)",
+    "lightningHelp": "投げ銭用Lightningアドレス (LUD-16)"
   }
 }

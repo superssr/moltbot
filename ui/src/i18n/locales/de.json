@@ -72,7 +72,8 @@
     "loading": "Lädt…",
     "applying": "Wird angewendet…",
     "installing": "Wird installiert…",
-    "importing": "Wird importiert..."
+    "importing": "Wird importiert...",
+    "updating": "Aktualisierung…"
   },
   "actions": {
     "apply": "Anwenden",
@@ -113,7 +114,11 @@
       "bindings": "Bindungen",
       "environment": "Umgebung",
       "canvasHost": "Canvas-Host",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "Authentifizierung",
+      "env": "Umgebungsvariablen",
+      "updates": "Aktualisierungen",
+      "wizard": "Einrichtungsassistent"
     },
     "descriptions": {
       "gateway": "Gateway-Server-Einstellungen (Port, Auth, Bindung)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "Erweitert ausblenden",
     "showAdvanced": "Erweitert anzeigen",
     "hashMissing": "Konfigurations-Hash fehlt; neu laden und erneut versuchen.",
-    "approvalHashMissing": "Genehmigungs-Hash fehlt; neu laden und erneut versuchen."
+    "approvalHashMissing": "Genehmigungs-Hash fehlt; neu laden und erneut versuchen.",
+    "allSettings": "Alle Einstellungen",
+    "form": "Formular",
+    "raw": "Raw",
+    "searchSettings": "Einstellungen suchen...",
+    "unsavedChanges": "Ungespeicherte Änderungen"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "Nein",
       "na": "k.A."
     }
+  },
+  "nostr": {
+    "username": "Benutzername",
+    "displayName": "Anzeigename",
+    "bio": "Bio",
+    "avatarUrl": "Avatar-URL",
+    "bannerUrl": "Banner-URL",
+    "website": "Webseite",
+    "lightningAddress": "Lightning-Adresse",
+    "importFromRelays": "Von Relays importieren",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "Satoshi Nakamoto",
+    "bioPlaceholder": "Erzähle etwas über dich...",
+    "usernameHelp": "Kurzer Benutzername (z.B. satoshi)",
+    "displayNameHelp": "Dein vollständiger Name",
+    "websiteHelp": "Deine persönliche Webseite",
+    "nip05Help": "Verifizierbarer Identifikator (z.B. du@domain.com)",
+    "lightningHelp": "Lightning-Adresse für Trinkgelder (LUD-16)"
   }
 }

@@ -72,7 +72,8 @@
     "loading": "Загрузка…",
     "applying": "Применение…",
     "installing": "Установка…",
-    "importing": "Импорт..."
+    "importing": "Импорт...",
+    "updating": "Обновление…"
   },
   "actions": {
     "apply": "Применить",
@@ -113,7 +114,11 @@
       "bindings": "Привязки",
       "environment": "Окружение",
       "canvasHost": "Хост Canvas",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "Аутентификация",
+      "env": "Переменные окружения",
+      "updates": "Обновления",
+      "wizard": "Мастер настройки"
     },
     "descriptions": {
       "gateway": "Настройки сервера Gateway (порт, аутентификация, привязка)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "Скрыть дополнительные",
     "showAdvanced": "Показать дополнительные",
     "hashMissing": "Отсутствует хеш конфигурации; перезагрузите и повторите.",
-    "approvalHashMissing": "Отсутствует хеш подтверждений; перезагрузите и повторите."
+    "approvalHashMissing": "Отсутствует хеш подтверждений; перезагрузите и повторите.",
+    "allSettings": "Все настройки",
+    "form": "Форма",
+    "raw": "Raw",
+    "searchSettings": "Поиск настроек...",
+    "unsavedChanges": "Несохранённые изменения"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "Нет",
       "na": "Н/Д"
     }
+  },
+  "nostr": {
+    "username": "Имя пользователя",
+    "displayName": "Отображаемое имя",
+    "bio": "Биография",
+    "avatarUrl": "URL аватара",
+    "bannerUrl": "URL баннера",
+    "website": "Веб-сайт",
+    "lightningAddress": "Lightning-адрес",
+    "importFromRelays": "Импорт из реле",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "Сатоси Накамото",
+    "bioPlaceholder": "Расскажите о себе...",
+    "usernameHelp": "Короткое имя (напр. satoshi)",
+    "displayNameHelp": "Ваше полное имя",
+    "websiteHelp": "Ваш личный сайт",
+    "nip05Help": "Верифицируемый идентификатор (напр. you@domain.com)",
+    "lightningHelp": "Lightning-адрес для чаевых (LUD-16)"
   }
 }

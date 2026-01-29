@@ -22,11 +22,11 @@ export function renderDiscordCard(params: {
       <div class="status-list" style="margin-top: 16px;">
         <div>
           <span class="label">Configured</span>
-          <span>${discord?.configured ? "Yes" : "No"}</span>
+          <span>${discord?.configured ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Running</span>
-          <span>${discord?.running ? "Yes" : "No"}</span>
+          <span>${discord?.running ? t("views.yesNo.yes") : t("views.yesNo.no")}</span>
         </div>
         <div>
           <span class="label">Last start</span>

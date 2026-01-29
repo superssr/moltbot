@@ -72,7 +72,8 @@
     "loading": "Chargement…",
     "applying": "Application…",
     "installing": "Installation…",
-    "importing": "Importation..."
+    "importing": "Importation...",
+    "updating": "Mise à jour…"
   },
   "actions": {
     "apply": "Appliquer",
@@ -113,7 +114,11 @@
       "bindings": "Liaisons",
       "environment": "Environnement",
       "canvasHost": "Hôte Canvas",
-      "cron": "Cron"
+      "cron": "Cron",
+      "auth": "Authentification",
+      "env": "Variables d'environnement",
+      "updates": "Mises à jour",
+      "wizard": "Assistant de configuration"
     },
     "descriptions": {
       "gateway": "Paramètres du serveur Gateway (port, auth, liaison)",
@@ -133,7 +138,12 @@
     "hideAdvanced": "Masquer avancé",
     "showAdvanced": "Afficher avancé",
     "hashMissing": "Hash de configuration manquant ; rechargez et réessayez.",
-    "approvalHashMissing": "Hash des approbations manquant ; rechargez et réessayez."
+    "approvalHashMissing": "Hash des approbations manquant ; rechargez et réessayez.",
+    "allSettings": "Tous les paramètres",
+    "form": "Formulaire",
+    "raw": "Raw",
+    "searchSettings": "Rechercher...",
+    "unsavedChanges": "Modifications non enregistrées"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "Non",
       "na": "N/A"
     }
+  },
+  "nostr": {
+    "username": "Nom d'utilisateur",
+    "displayName": "Nom d'affichage",
+    "bio": "Bio",
+    "avatarUrl": "URL de l'avatar",
+    "bannerUrl": "URL de la bannière",
+    "website": "Site web",
+    "lightningAddress": "Adresse Lightning",
+    "importFromRelays": "Importer depuis les relais",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "Satoshi Nakamoto",
+    "bioPlaceholder": "Parlez-nous de vous...",
+    "usernameHelp": "Nom court (ex. satoshi)",
+    "displayNameHelp": "Votre nom complet",
+    "websiteHelp": "Votre site web personnel",
+    "nip05Help": "Identifiant vérifiable (ex. vous@domaine.com)",
+    "lightningHelp": "Adresse Lightning pour les pourboires (LUD-16)"
   }
 }

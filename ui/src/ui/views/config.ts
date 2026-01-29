@@ -76,18 +76,18 @@ const sidebarIcons = {
 
 // Section definitions
 const SECTIONS: Array<{ key: string; label: string }> = [
-  { key: "env", label: "Environment" },
-  { key: "update", label: "Updates" },
-  { key: "agents", label: "Agents" },
-  { key: "auth", label: "Authentication" },
-  { key: "channels", label: "Channels" },
-  { key: "messages", label: "Messages" },
-  { key: "commands", label: "Commands" },
-  { key: "hooks", label: "Hooks" },
-  { key: "skills", label: "Skills" },
-  { key: "tools", label: "Tools" },
-  { key: "gateway", label: "Gateway" },
-  { key: "wizard", label: "Setup Wizard" },
+  { key: "env", labelKey: "config.categories.env" },
+  { key: "update", labelKey: "config.categories.updates" },
+  { key: "agents", labelKey: "config.categories.agents" },
+  { key: "auth", labelKey: "config.categories.auth" },
+  { key: "channels", labelKey: "config.categories.channels" },
+  { key: "messages", labelKey: "config.categories.messages" },
+  { key: "commands", labelKey: "config.categories.commands" },
+  { key: "hooks", labelKey: "config.categories.hooks" },
+  { key: "skills", labelKey: "config.categories.skills" },
+  { key: "tools", labelKey: "config.categories.tools" },
+  { key: "gateway", labelKey: "config.categories.gateway" },
+  { key: "wizard", labelKey: "config.categories.wizard" },
 ];
 
 type SubsectionEntry = {
@@ -269,7 +269,7 @@ export function renderConfig(props: ConfigProps) {
           <input
             type="text"
             class="config-search__input"
-            placeholder="Search settings..."
+            placeholder=t("config.searchSettings")
             .value=${props.searchQuery}
             @input=${(e: Event) => props.onSearchChange((e.target as HTMLInputElement).value)}
           />
@@ -296,7 +296,7 @@ export function renderConfig(props: ConfigProps) {
               @click=${() => props.onSectionChange(section.key)}
             >
               <span class="config-nav__icon">${getSectionIcon(section.key)}</span>
-              <span class="config-nav__label">${section.label}</span>
+              <span class="config-nav__label">${t(section.labelKey)}</span>
             </button>
           `)}
         </nav>
@@ -327,7 +327,7 @@ export function renderConfig(props: ConfigProps) {
         <div class="config-actions">
           <div class="config-actions__left">
             ${hasChanges ? html`
-              <span class="config-changes-badge">${props.formMode === "raw" ? "Unsaved changes" : `${diff.length} unsaved change${diff.length !== 1 ? "s" : ""}`}</span>
+              <span class="config-changes-badge">${props.formMode === "raw" ? t("config.unsavedChanges") : `${diff.length} unsaved change${diff.length !== 1 ? "s" : ""}`}</span>
             ` : html`
               <span class="config-status muted">No changes</span>
             `}
@@ -355,7 +355,7 @@ export function renderConfig(props: ConfigProps) {
               ?disabled=${!canUpdate}
               @click=${props.onUpdate}
             >
-              ${props.updating ? "Updating…" : "Update"}
+              ${props.updating ? t("status.updating") : t("actions.update")}
             </button>
           </div>
         </div>
@@ -389,7 +389,7 @@ export function renderConfig(props: ConfigProps) {
               <div class="config-section-hero">
                 <div class="config-section-hero__icon">${getSectionIcon(props.activeSection ?? "")}</div>
                 <div class="config-section-hero__text">
-                  <div class="config-section-hero__title">${activeSectionMeta.label}</div>
+                  <div class="config-section-hero__title">${t(activeSectionMeta.labelKey)}</div>
                   ${activeSectionMeta.description
                     ? html`<div class="config-section-hero__desc">${activeSectionMeta.description}</div>`
                     : nothing}

@@ -72,7 +72,8 @@
     "loading": "加载中…",
     "applying": "应用中…",
     "installing": "安装中…",
-    "importing": "导入中..."
+    "importing": "导入中...",
+    "updating": "更新中…"
   },
   "actions": {
     "apply": "应用",
@@ -113,7 +114,11 @@
       "bindings": "绑定",
       "environment": "环境变量",
       "canvasHost": "画布主机",
-      "cron": "定时任务"
+      "cron": "定时任务",
+      "auth": "认证",
+      "env": "环境变量",
+      "updates": "更新",
+      "wizard": "设置向导"
     },
     "descriptions": {
       "gateway": "网关服务器设置（端口、认证、绑定）",
@@ -133,7 +138,12 @@
     "hideAdvanced": "隐藏高级选项",
     "showAdvanced": "显示高级选项",
     "hashMissing": "配置哈希缺失；请重新加载并重试。",
-    "approvalHashMissing": "执行审批哈希缺失；请重新加载并重试。"
+    "approvalHashMissing": "执行审批哈希缺失；请重新加载并重试。",
+    "allSettings": "所有设置",
+    "form": "表单",
+    "raw": "原始",
+    "searchSettings": "搜索设置...",
+    "unsavedChanges": "未保存的更改"
   },
   "channels": {
     "whatsapp": "WhatsApp",
@@ -247,5 +257,23 @@
       "no": "否",
       "na": "不适用"
     }
+  },
+  "nostr": {
+    "username": "用户名",
+    "displayName": "显示名称",
+    "bio": "简介",
+    "avatarUrl": "头像 URL",
+    "bannerUrl": "横幅 URL",
+    "website": "网站",
+    "lightningAddress": "闪电地址",
+    "importFromRelays": "从中继导入",
+    "usernamePlaceholder": "satoshi",
+    "displayNamePlaceholder": "中本聪",
+    "bioPlaceholder": "介绍一下你自己...",
+    "usernameHelp": "简短用户名 (如 satoshi)",
+    "displayNameHelp": "你的完整显示名称",
+    "websiteHelp": "你的个人网站",
+    "nip05Help": "可验证标识符 (如 you@domain.com)",
+    "lightningHelp": "用于打赏的闪电地址 (LUD-16)"
   }
 }
