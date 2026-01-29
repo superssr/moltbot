@@ -1,4 +1,5 @@
 /**
+import { t } from "../../i18n/index.js";
  * Nostr Profile Edit Form
  *
  * Provides UI for editing and publishing Nostr profile (kind:0).

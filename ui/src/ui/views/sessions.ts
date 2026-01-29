@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatAgo } from "../format";
 import { formatSessionTokens } from "../presenter";
@@ -80,7 +81,7 @@ export function renderSessions(props: SessionsProps) {
           <div class="card-sub">Active session keys and per-session overrides.</div>
         </div>
         <button class="btn" ?disabled=${props.loading} @click=${props.onRefresh}>
-          ${props.loading ? "Loading…" : "Refresh"}
+          ${props.loading ? t("status.loading") : t("actions.refresh")}
         </button>
       </div>
 

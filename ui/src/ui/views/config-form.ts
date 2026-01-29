@@ -1,4 +1,5 @@
 export { renderConfigForm, type ConfigFormProps, SECTION_META } from "./config-form.render";
+import { t } from "../../i18n/index.js";
 export {
   analyzeConfigSchema,
   type ConfigSchemaAnalysis,

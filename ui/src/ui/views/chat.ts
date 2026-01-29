@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 import { ref } from "lit/directives/ref.js";
 import { repeat } from "lit/directives/repeat.js";
 import type { SessionsListResult } from "../types";
@@ -157,13 +158,13 @@ function renderAttachmentPreview(props: ChatProps) {
           <div class="chat-attachment">
             <img
               src=${att.dataUrl}
-              alt="Attachment preview"
+              alt=t("views.attachmentPreview")
               class="chat-attachment__img"
             />
             <button
               class="chat-attachment__remove"
               type="button"
-              aria-label="Remove attachment"
+              aria-label=t("views.removeAttachment")
               @click=${() => {
                 const next = (props.attachments ?? []).filter(
                   (a) => a.id !== att.id,
@@ -257,8 +258,8 @@ export function renderChat(props: ChatProps) {
               class="chat-focus-exit"
               type="button"
               @click=${props.onToggleFocusMode}
-              aria-label="Exit focus mode"
-              title="Exit focus mode"
+              aria-label=t("sidebar.exitFocus")
+              title=t("sidebar.exitFocus")
             >
               ${icons.x}
             </button>
@@ -359,14 +360,14 @@ export function renderChat(props: ChatProps) {
               ?disabled=${!props.connected || (!canAbort && props.sending)}
               @click=${canAbort ? props.onAbort : props.onNewSession}
             >
-              ${canAbort ? "Stop" : "New session"}
+              ${canAbort ? t("views.stop") : "New session"}
             </button>
             <button
               class="btn primary"
               ?disabled=${!props.connected}
               @click=${props.onSend}
             >
-              ${isBusy ? "Queue" : "Send"}<kbd class="btn-kbd">↵</kbd>
+              ${isBusy ? "Queue" : t("chat.send")}<kbd class="btn-kbd">↵</kbd>
             </button>
           </div>
         </div>

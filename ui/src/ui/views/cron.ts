@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatMs } from "../format";
 import {
@@ -81,7 +82,7 @@ export function renderCron(props: CronProps) {
         </div>
         <div class="row" style="margin-top: 12px;">
           <button class="btn" ?disabled=${props.loading} @click=${props.onRefresh}>
-            ${props.loading ? "Refreshing…" : "Refresh"}
+            ${props.loading ? t("views.refreshing") : t("actions.refresh")}
           </button>
           ${props.error ? html`<span class="muted">${props.error}</span>` : nothing}
         </div>
@@ -183,7 +184,7 @@ export function renderCron(props: CronProps) {
           </label>
         </div>
         <label class="field" style="margin-top: 12px;">
-          <span>${props.form.payloadKind === "systemEvent" ? "System text" : "Agent message"}</span>
+          <span>${props.form.payloadKind === "systemEvent" ? t("views.systemText") : t("chat.agentMessage")}</span>
           <textarea
             .value=${props.form.payloadText}
             @input=${(e: Event) =>
@@ -262,7 +263,7 @@ export function renderCron(props: CronProps) {
           : nothing}
         <div class="row" style="margin-top: 14px;">
           <button class="btn primary" ?disabled=${props.busy} @click=${props.onAdd}>
-            ${props.busy ? "Saving…" : "Add job"}
+            ${props.busy ? t("views.saving") : t("actions.addJob")}
           </button>
         </div>
       </div>
@@ -396,7 +397,7 @@ function renderJob(job: CronJob, props: CronProps) {
               props.onToggle(job, !job.enabled);
             }}
           >
-            ${job.enabled ? "Disable" : "Enable"}
+            ${job.enabled ? t("actions.disable") : t("actions.enable")}
           </button>
           <button
             class="btn"

@@ -1,4 +1,5 @@
 import { html } from "lit";
+import { t } from "../../i18n/index.js";
 
 import type { ConfigUiHints } from "../types";
 import type { ChannelsProps } from "./channels.types";
@@ -119,7 +120,7 @@ export function renderChannelConfigSection(params: {
           ?disabled=${disabled || !props.configFormDirty}
           @click=${() => props.onConfigSave()}
         >
-          ${props.configSaving ? "Saving…" : "Save"}
+          ${props.configSaving ? "Saving…" : t("actions.save")}
         </button>
         <button
           class="btn"

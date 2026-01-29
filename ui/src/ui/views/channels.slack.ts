@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatAgo } from "../format";
 import type { SlackStatus } from "../types";

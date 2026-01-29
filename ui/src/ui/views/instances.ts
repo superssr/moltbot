@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatPresenceAge, formatPresenceSummary } from "../presenter";
 import type { PresenceEntry } from "../types";
@@ -20,7 +21,7 @@ export function renderInstances(props: InstancesProps) {
           <div class="card-sub">Presence beacons from the gateway and clients.</div>
         </div>
         <button class="btn" ?disabled=${props.loading} @click=${props.onRefresh}>
-          ${props.loading ? "Loading…" : "Refresh"}
+          ${props.loading ? t("status.loading") : t("actions.refresh")}
         </button>
       </div>
       ${props.lastError

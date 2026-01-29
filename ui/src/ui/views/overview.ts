@@ -1,4 +1,5 @@
 import { html } from "lit";
+import { t } from "../../i18n/index.js";
 
 import type { GatewayHelloOk } from "../gateway";
 import { formatAgo, formatDurationMs } from "../format";
@@ -181,7 +182,7 @@ export function renderOverview(props: OverviewProps) {
           <div class="stat">
             <div class="stat-label">Status</div>
             <div class="stat-value ${props.connected ? "ok" : "warn"}">
-              ${props.connected ? "Connected" : "Disconnected"}
+              ${props.connected ? t("status.connected") : t("status.disconnected")}
             </div>
           </div>
           <div class="stat">
@@ -230,8 +231,8 @@ export function renderOverview(props: OverviewProps) {
           ${props.cronEnabled == null
             ? "n/a"
             : props.cronEnabled
-              ? "Enabled"
-              : "Disabled"}
+              ? t("status.enabled")
+              : t("status.disabled")}
         </div>
         <div class="muted">Next wake ${formatNextRun(props.cronNext)}</div>
       </div>

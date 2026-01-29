@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatEventPayload } from "../presenter";
 import type { EventLogEntry } from "../app-events";
@@ -35,7 +36,7 @@ export function renderDebug(props: DebugProps) {
       ? `${critical} critical`
       : warn > 0
         ? `${warn} warnings`
-        : "No critical issues";
+        : t("views.noCriticalIssues");
 
   return html`
     <section class="grid grid-cols-2">
@@ -46,7 +47,7 @@ export function renderDebug(props: DebugProps) {
             <div class="card-sub">Status, health, and heartbeat data.</div>
           </div>
           <button class="btn" ?disabled=${props.loading} @click=${props.onRefresh}>
-            ${props.loading ? "Refreshing…" : "Refresh"}
+            ${props.loading ? t("views.refreshing") : t("actions.refresh")}
           </button>
         </div>
         <div class="stack" style="margin-top: 12px;">

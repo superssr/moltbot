@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatAgo } from "../format";
 import type { ChannelAccountSnapshot, NostrStatus } from "../types";
@@ -138,7 +139,7 @@ export function renderNostrCard(params: {
                       <div style="margin-bottom: 8px;">
                         <img
                           src=${picture}
-                          alt="Profile picture"
+                          alt=t("views.profilePicture")
                           style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color);"
                           @error=${(e: Event) => {
                             (e.target as HTMLImageElement).style.display = "none";
@@ -159,7 +160,7 @@ export function renderNostrCard(params: {
             `
           : html`
               <div style="color: var(--text-muted); font-size: 13px;">
-                No profile set. Click "Edit Profile" to add your name, bio, and avatar.
+                No profile set. Click t("actions.editProfile") to add your name, bio, and avatar.
               </div>
             `}
       </div>

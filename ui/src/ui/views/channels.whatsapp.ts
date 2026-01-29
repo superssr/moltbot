@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { formatAgo } from "../format";
 import type { WhatsAppStatus } from "../types";
@@ -74,7 +75,7 @@ export function renderWhatsAppCard(params: {
 
       ${props.whatsappQrDataUrl
         ? html`<div class="qr-wrap">
-            <img src=${props.whatsappQrDataUrl} alt="WhatsApp QR" />
+            <img src=${props.whatsappQrDataUrl} alt=t("views.whatsappQR") />
           </div>`
         : nothing}
 
@@ -84,7 +85,7 @@ export function renderWhatsAppCard(params: {
           ?disabled=${props.whatsappBusy}
           @click=${() => props.onWhatsAppStart(false)}
         >
-          ${props.whatsappBusy ? "Working…" : "Show QR"}
+          ${props.whatsappBusy ? t("views.working") : t("views.showQR")}
         </button>
         <button
           class="btn"

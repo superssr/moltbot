@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 import { unsafeHTML } from "lit/directives/unsafe-html.js";
 
 import { icons } from "../icons";

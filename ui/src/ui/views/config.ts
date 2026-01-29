@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 import type { ConfigUiHints } from "../types";
 import { analyzeConfigSchema, renderConfigForm, SECTION_META } from "./config-form";
 import {
@@ -333,21 +334,21 @@ export function renderConfig(props: ConfigProps) {
           </div>
           <div class="config-actions__right">
             <button class="btn btn--sm" ?disabled=${props.loading} @click=${props.onReload}>
-              ${props.loading ? "Loading…" : "Reload"}
+              ${props.loading ? t("status.loading") : "Reload"}
             </button>
             <button
               class="btn btn--sm primary"
               ?disabled=${!canSave}
               @click=${props.onSave}
             >
-              ${props.saving ? "Saving…" : "Save"}
+              ${props.saving ? "Saving…" : t("actions.save")}
             </button>
             <button
               class="btn btn--sm"
               ?disabled=${!canApply}
               @click=${props.onApply}
             >
-              ${props.applying ? "Applying…" : "Apply"}
+              ${props.applying ? "Applying…" : t("actions.apply")}
             </button>
             <button
               class="btn btn--sm"

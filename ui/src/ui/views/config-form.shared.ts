@@ -1,4 +1,5 @@
 import type { ConfigUiHints } from "../types";
+import { t } from "../../i18n/index.js";
 
 export type JsonSchema = {
   type?: string | string[];

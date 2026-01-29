@@ -1,4 +1,5 @@
 import { html, nothing, type TemplateResult } from "lit";
+import { t } from "../../i18n/index.js";
 import type { ConfigUiHints } from "../types";
 import {
   defaultValue,
@@ -517,7 +518,7 @@ function renderArray(params: {
 
       ${arr.length === 0 ? html`
         <div class="cfg-array__empty">
-          No items yet. Click "Add" to create one.
+          No items yet. Click t("actions.add") to create one.
         </div>
       ` : html`
         <div class="cfg-array__items">

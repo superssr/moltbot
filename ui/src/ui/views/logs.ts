@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import type { LogEntry, LogLevel } from "../types";
 
@@ -55,7 +56,7 @@ export function renderLogs(props: LogsProps) {
         </div>
         <div class="row" style="gap: 8px;">
           <button class="btn" ?disabled=${props.loading} @click=${props.onRefresh}>
-            ${props.loading ? "Loading…" : "Refresh"}
+            ${props.loading ? t("status.loading") : t("actions.refresh")}
           </button>
           <button
             class="btn"
@@ -74,7 +75,7 @@ export function renderLogs(props: LogsProps) {
             .value=${props.filterText}
             @input=${(e: Event) =>
               props.onFilterTextChange((e.target as HTMLInputElement).value)}
-            placeholder="Search logs"
+            placeholder=t("views.searchLogs")
           />
         </label>
         <label class="field checkbox">

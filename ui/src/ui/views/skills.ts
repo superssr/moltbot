@@ -1,4 +1,5 @@
 import { html, nothing } from "lit";
+import { t } from "../../i18n/index.js";
 
 import { clampText } from "../format";
 import type { SkillStatusEntry, SkillStatusReport } from "../types";
@@ -40,7 +41,7 @@ export function renderSkills(props: SkillsProps) {
           <div class="card-sub">Bundled, managed, and workspace skills.</div>
         </div>
         <button class="btn" ?disabled=${props.loading} @click=${props.onRefresh}>
-          ${props.loading ? "Loading…" : "Refresh"}
+          ${props.loading ? t("status.loading") : t("actions.refresh")}
         </button>
       </div>
 
@@ -51,7 +52,7 @@ export function renderSkills(props: SkillsProps) {
             .value=${props.filter}
             @input=${(e: Event) =>
               props.onFilterChange((e.target as HTMLInputElement).value)}
-            placeholder="Search skills"
+            placeholder=t("views.searchSkills")
           />
         </label>
         <div class="muted">${filtered.length} shown</div>
@@ -123,7 +124,7 @@ function renderSkill(skill: SkillStatusEntry, props: SkillsProps) {
             ?disabled=${busy}
             @click=${() => props.onToggle(skill.skillKey, skill.disabled)}
           >
-            ${skill.disabled ? "Enable" : "Disable"}
+            ${skill.disabled ? t("actions.enable") : t("actions.disable")}
           </button>
           ${canInstall
             ? html`<button
