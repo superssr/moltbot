@@ -26,17 +26,17 @@
       "logs": "Journaux"
     },
     "subtitles": {
-      "overview": "État de la passerelle, points d'entrée et vérification rapide de santé.",
+      "overview": "État du Gateway, points d'entrée et vérification rapide de santé.",
       "channels": "Gérer les canaux et les paramètres.",
       "instances": "Balises de présence des clients et nœuds connectés.",
       "sessions": "Inspecter les sessions actives et ajuster les valeurs par défaut.",
       "cron": "Planifier les réveils et les exécutions récurrentes de l'agent.",
       "skills": "Gérer la disponibilité des compétences et l'injection des clés API.",
       "nodes": "Appareils appairés, capacités et exposition des commandes.",
-      "chat": "Session de chat directe avec la passerelle pour des interventions rapides.",
+      "chat": "Session de chat directe avec le Gateway pour des interventions rapides.",
       "config": "Modifier ~/.clawdbot/clawdbot.json en toute sécurité.",
-      "debug": "Instantanés de la passerelle, événements et appels RPC manuels.",
-      "logs": "Suivi en direct des journaux de la passerelle."
+      "debug": "Instantanés du Gateway, événements et appels RPC manuels.",
+      "logs": "Suivi en direct des journaux du Gateway."
     }
   },
   "sidebar": {
@@ -47,7 +47,7 @@
   },
   "chat": {
     "placeholder": "Message (↩ pour envoyer, Shift+↩ pour saut de ligne)",
-    "connect": "Connectez-vous à la passerelle pour commencer à discuter…",
+    "connect": "Connectez-vous au Gateway pour commencer à discuter…",
     "agentMessage": "Message de l'agent",
     "agentMessageRequired": "Message de l'agent requis.",
     "assistant": "Assistant",
@@ -64,7 +64,7 @@
     "offline": "Hors ligne",
     "connected": "Connecté",
     "disconnected": "Déconnecté",
-    "disconnectedGateway": "Déconnecté de la passerelle.",
+    "disconnectedGateway": "Déconnecté du Gateway.",
     "active": "Actif",
     "enabled": "Activé",
     "disabled": "Désactivé",
@@ -94,7 +94,7 @@
   },
   "config": {
     "categories": {
-      "gateway": "Passerelle",
+      "gateway": "Gateway",
       "agents": "Agents",
       "authentication": "Authentification",
       "models": "Modèles",
@@ -116,7 +116,7 @@
       "cron": "Cron"
     },
     "descriptions": {
-      "gateway": "Paramètres du serveur passerelle (port, auth, liaison)",
+      "gateway": "Paramètres du serveur Gateway (port, auth, liaison)",
       "agents": "Configurations des agents, modèles et identités",
       "authentication": "Clés API et profils d'authentification",
       "models": "Configurations des modèles IA et fournisseurs",
@@ -127,7 +127,7 @@
       "messages": "Paramètres de gestion et routage des messages",
       "logging": "Niveaux de journalisation et configuration de sortie",
       "canvasHost": "Rendu et affichage du canvas",
-      "environment": "Variables d'environnement passées au processus passerelle"
+      "environment": "Variables d'environnement passées au processus Gateway"
     },
     "noSettings": "Aucun paramètre dans cette section",
     "hideAdvanced": "Masquer avancé",
@@ -155,7 +155,7 @@
     "always": "Toujours",
     "defaultSecurityMode": "Mode de sécurité par défaut.",
     "defaultPromptPolicy": "Politique de prompt par défaut.",
-    "allowSkillExecutables": "Autoriser les exécutables de compétences listés par la passerelle."
+    "allowSkillExecutables": "Autoriser les exécutables de compétences listés par le Gateway."
   },
   "cron": {
     "cronRequired": "Expression cron requise.",
